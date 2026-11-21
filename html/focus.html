@@ -1,0 +1,347 @@
+<html lang="zh-CN">
+
+<head>
+    <script>(function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/site-base.css">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161629">
+    <meta name="theme-color" content="#050807">
+    <title>二进制书房 - 智能刷题平台</title>
+    <meta name="description" content="真题练习、错题复习，稳稳通过考试">
+    <link rel="shortcut icon" href="../images/icon.png">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="apple-touch-icon" href="../images/icon-180.png">
+    <link rel="stylesheet" href="../css/fredoka.css">
+</head>
+
+<body class="font-sans antialiased"><!--$--><!--/$-->
+    <aside class="v3-theme fixed left-0 top-0 bottom-0 z-30 hidden w-[260px] md:block v41-rail"
+        style="border-right: 2px solid var(--line); background-color: var(--cream);">
+        <div class="v41-sidebar v3-theme flex h-full flex-col v41-scroll-thin" style="background-color: var(--cream);">
+            <div class="px-4 pt-4 pb-2 v41-side-brand"><a class="flex items-center gap-2.5" href="dashboard.html"><span
+                        class="v41-brand-logo" aria-hidden="true"></span>
+                    <div class="leading-tight">
+                        <div class="text-[17px] font-extrabold tracking-tight"
+                            style="color: var(--ink); font-family: var(--font-cn);">二进制书房</div>
+                    </div>
+                </a></div>
+            <nav class="flex-1 overflow-y-auto px-3 v41-scroll-thin scroll-fade-y">
+                <div class="v41-sidebar-group">
+                    <p class="v41-sidebar-group-title"><span class="v41-g-ico">📚</span><span
+                            class="v41-g-txt">学习</span></p><a class="v41-nav-item" href="dashboard.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                            </path>
+                        </svg><span class="flex-1">首页</span></a><a class="v41-nav-item" href="library.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-open size-[18px] shrink-0" aria-hidden="true">
+                            <path
+                                d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2">
+                            </path>
+                        </svg><span class="flex-1">题库</span></a><a class="v41-nav-item" href="classes.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-users size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg><span class="flex-1">班级</span></a><a class="v41-nav-item" href="mistakes.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-alert size-[18px] shrink-0" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" x2="12" y1="8" y2="12"></line>
+                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                        </svg><span class="flex-1">错题本</span></a><a class="v41-nav-item" href="practice.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-target size-[18px] shrink-0" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg><span class="flex-1">专项练习</span></a><a class="v41-nav-item" href="records.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-history size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                            <path d="M12 7v5l4 2"></path>
+                        </svg><span class="flex-1">做题记录</span></a>
+                </div>
+                <div class="v41-sidebar-group">
+                    <p class="v41-sidebar-group-title v41-sidebar-more-toggle"><span class="v41-g-ico">🧰</span><span
+                            class="v41-g-txt">小工具</span></p>
+                </div>
+            </nav>
+            <div class="px-3 pb-4 pt-3 v41-side-foot" style="border-top: 2px solid var(--line);">
+                <div class="flex items-center gap-2 p-2 rounded-xl"
+                    style="background-color: var(--grape-soft); border: 2px solid var(--line);"><a
+                        class="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg px-1 py-0.5 transition-all"
+                        href="settings.html" style="border:0;">
+                        <div class="flex shrink-0 items-center justify-center rounded-full overflow-hidden"
+                            style="width: 36px; height: 36px"><img src="../images/avatar.jpg" alt=""
+                                style="width:100%; height:100%; object-fit:cover; border-radius:9999px">
+                        </div>
+                        <div class="min-w-0 flex-1 leading-tight">
+                            <p class="text-[13px] font-bold truncate" title="弥彦"
+                                style="color: var(--ink); font-family: var(--font-cn);">弥彦</p>
+                        </div>
+                    </a>
+                    <div class="flex shrink-0 items-center gap-1.5"><button aria-label="切换主题模式" title="跟随系统（点击切到日间）"
+                            class="flex size-8 shrink-0 items-center justify-center rounded-lg transition-all duration-150"
+                            style="background-color: var(--paper); color: var(--ink-soft)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-monitor size-3.5" aria-hidden="true">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg></button><button aria-label="退出登录" title="退出登录"
+                            class="flex size-8 shrink-0 items-center justify-center rounded-lg transition-all"
+                            style="background-color: var(--paper); color: var(--ink-faint)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-log-out size-3.5" aria-hidden="true">
+                                <path d="m16 17 5-5-5-5"></path>
+                                <path d="M21 12H9"></path>
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            </svg></button></div>
+                </div>
+            </div>
+    </aside><button type="button" aria-label="打开菜单"
+        class="v3-theme fixed left-4 top-4 z-30 inline-flex size-10 items-center justify-center rounded-xl md:hidden"
+        style="background-color: var(--paper); color: var(--ink); box-shadow: 3px 3px 0 var(--ink)"><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu size-5" aria-hidden="true">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+        </svg></button>
+    <header class="v3-theme v41-topbar" id="appTopbar">
+  <div class="v41-tb-right">
+    <a class="v41-tb-search" href="library.html" aria-label="搜索题目">
+      <svg class="v41-tb-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <span class="v41-tb-txt">搜索题目、章节…</span>
+      <kbd class="v41-tb-kbd">⌘K</kbd>
+    </a>
+    <button class="v41-tb-streak" type="button" aria-label="连续打卡天数">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-2.9 7-6.7 0-4.1-4.2-6.8-4.2-10.8C14.8 3 13.6 2 12 2c0 3.4-3 5-3 8.4 0 1.3.5 2.3 1.2 3.1C9 13.2 8 12.5 8 11c-1.2 1.4-2 3.1-2 5 0 3.5 2.7 6 6 6z"></path></svg>
+      <span>41 天</span>
+    </button>
+    <button class="v41-tb-bell" type="button" aria-label="通知">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 01-3.4 0"></path></svg>
+      <i class="v41-tb-dot" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+<main class="v3-theme min-h-screen pt-16 md:ml-[260px] md:pt-0 v41-main" style="background-color: var(--color-bg);">
+        <div class="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-10">
+            <div class="relative z-10 mx-auto w-full max-w-lg" style="opacity: 1; transform: none;">
+                <div class="mb-10 text-center">
+                    <div class="relative mx-auto mb-6" style="transform: none;">
+                        <div class="absolute inset-0 size-24 rounded-full blur-xl"
+                            style="background: radial-gradient(circle, var(--grape-soft2) 0%, transparent 70%);"></div>
+                        <div class="relative mx-auto flex size-24 items-center justify-center"
+                            style="border-radius: 62% 38% 55% 45% / 45% 55%; background: linear-gradient(135deg, var(--grape) 0%, var(--grape-deep) 100%); box-shadow: 0 8px 0 var(--grape-deep), 0 15px 30px -8px rgba(79,70,229,0.4);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-timer size-10 text-white"
+                                aria-hidden="true">
+                                <line x1="10" x2="14" y1="2" y2="2"></line>
+                                <line x1="12" x2="15" y1="14" y2="11"></line>
+                                <circle cx="12" cy="14" r="8"></circle>
+                            </svg>
+                            <div class="absolute -right-1 -top-1"
+                                style="transform: scale(1.07554) rotate(-7.33004deg);"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-sparkles size-6 text-yellow-300"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                    </path>
+                                    <path d="M20 2v4"></path>
+                                    <path d="M22 4h-4"></path>
+                                    <circle cx="4" cy="20" r="2"></circle>
+                                </svg></div>
+                        </div>
+                    </div>
+                    <h2 class="font-display text-3xl font-black tracking-tight"
+                        style="color: var(--ink); opacity: 1; transform: none;">番茄钟专注模式</h2>
+                    <p class="mt-3 text-[15px]" style="color: var(--ink-faint); opacity: 1;">选一个题集，开启沉浸式刷题之旅 ✨<br><span
+                            class="text-[13px]" style="color: var(--ink-soft);">专注期间论坛将暂时关闭</span></p>
+                </div>
+                <div class="mb-5 rounded-3xl p-5 transition-colors duration-200"
+                    style="background-color: var(--paper); border: 2px solid var(--line); box-shadow: 5px 5px 0 var(--grape-soft); opacity: 1; transform: none;">
+                    <div class="mb-4 flex items-center gap-2.5">
+                        <div class="flex size-8 items-center justify-center rounded-xl"
+                            style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; background-color: var(--grape-soft);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-book-open size-4" aria-hidden="true"
+                                style="color: var(--grape);">
+                                <path d="M12 7v14"></path>
+                                <path
+                                    d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                                </path>
+                            </svg>
+                        </div><span class="text-[14px] font-extrabold" style="color: var(--ink);">选择题集</span><span
+                            class="rounded-full px-2 py-0.5 text-[10px] font-bold"
+                            style="background-color: var(--cream-deep); color: var(--ink-faint);">可选</span>
+                    </div>
+                    <div class="relative" style=""><button
+                            class="flex w-full items-center justify-between rounded-2xl px-4 py-3.5 text-left transition-colors duration-200"
+                            style="background-color: var(--cream)">
+                            <div class="min-w-0 flex-1"><span class="text-[14px]"
+                                    style="color: var(--ink-faint);">不绑定题集，自由专注 🎯</span></div>
+                            <div style="transform: none;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-chevron-right size-5 rotate-90" aria-hidden="true"
+                                    style="color: var(--ink-faint);">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg></div>
+                        </button></div>
+                </div>
+                <div class="mb-5 rounded-3xl p-5 transition-colors duration-200"
+                    style="background-color: var(--paper); border: 2px solid var(--line); box-shadow: 5px 5px 0 var(--peach-soft); opacity: 1; transform: none;">
+                    <div class="mb-4 flex items-center gap-2.5">
+                        <div class="flex size-8 items-center justify-center rounded-xl"
+                            style="border-radius: 70% 30% 30% 70% / 60% 40%; background-color: var(--peach-soft);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-target size-4" aria-hidden="true"
+                                style="color: var(--peach);">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg></div><span class="text-[14px] font-extrabold"
+                            style="color: var(--ink);">专注时长</span><span class="ml-auto text-[11px] font-bold"
+                            style="color: var(--ink-faint);">25 分钟</span>
+                    </div>
+                    <div class="grid grid-cols-3 gap-3"><button
+                            class="relative flex flex-col items-center justify-center rounded-2xl py-4 transition-all duration-200"
+                            tabindex="0"
+                            style="background-color: var(--cream); color: var(--ink-soft); opacity: 1; transform: none"><span
+                                class="font-display text-2xl font-black">15</span><span
+                                class="mt-0.5 text-[11px] font-bold ">快速冲刺</span></button><button
+                            class="relative flex flex-col items-center justify-center rounded-2xl py-4 transition-all duration-200 text-white"
+                            tabindex="0"
+                            style="background: linear-gradient(135deg, var(--grape) 0%, var(--grape-deep) 100%); opacity: 1; transform: none"><span
+                                class="font-display text-2xl font-black">25</span><span
+                                class="mt-0.5 text-[11px] font-bold text-white/80">经典番茄</span>
+                            <div class="absolute -right-1 -top-1 flex size-5 items-center justify-center rounded-full bg-white shadow-md"
+                                style="transform: none"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-circle-check size-3.5"
+                                    aria-hidden="true" style="color: var(--grape);">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg></div>
+                        </button><button
+                            class="relative flex flex-col items-center justify-center rounded-2xl py-4 transition-all duration-200"
+                            tabindex="0"
+                            style="background-color: var(--cream); color: var(--ink-soft); opacity: 1; transform: none"><span
+                                class="font-display text-2xl font-black">45</span><span
+                                class="mt-0.5 text-[11px] font-bold ">深度沉浸</span></button></div>
+                    <div class="mt-3 flex items-center gap-2 rounded-2xl px-4 py-3 transition-all duration-200"
+                        style="background-color: var(--cream); border: 2px solid var(--line); color: var(--ink-soft); opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-sparkles size-4 shrink-0" aria-hidden="true"
+                            style="color: var(--grape);">
+                            <path
+                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                            </path>
+                            <path d="M20 2v4"></path>
+                            <path d="M22 4h-4"></path>
+                            <circle cx="4" cy="20" r="2"></circle>
+                        </svg><span class="text-[12px] font-bold">自定义</span><input min="5" max="120" placeholder="5-120"
+                            class="w-16 bg-transparent text-center text-[14px] font-black tabular-nums outline-none [appearance:textfield] [&amp;::-webkit-inner-spin-button]:appearance-none [&amp;::-webkit-outer-spin-button]:appearance-none"
+                            type="number" value="" style="color: var(--ink);"><span
+                            class="text-[12px] font-bold">分钟</span>
+                    </div>
+                </div>
+                <div class="mb-8 rounded-3xl p-5 transition-colors duration-200"
+                    style="background-color: var(--paper); border: 2px solid var(--line); box-shadow: 5px 5px 0 var(--mint-soft); opacity: 1; transform: none;">
+                    <div class="mb-4 flex items-center gap-2.5">
+                        <div class="flex size-8 items-center justify-center rounded-xl"
+                            style="border-radius: 40% 60% 50% 50% / 50%; background-color: var(--mint-soft);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-music size-4" aria-hidden="true"
+                                style="color: var(--mint);">
+                                <path d="M9 18V5l12-2v13"></path>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <circle cx="18" cy="16" r="3"></circle>
+                            </svg></div><span class="text-[14px] font-extrabold"
+                            style="color: var(--ink);">环境音</span><span
+                            class="rounded-full px-2 py-0.5 text-[10px] font-bold"
+                            style="background-color: var(--cream-deep); color: var(--ink-faint);">可选</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="flex flex-wrap items-center justify-center gap-2"><button type="button"
+                                class="inline-flex items-center gap-1 rounded-full px-3.5 py-1.5 text-[12px] font-bold transition-colors"
+                                aria-pressed="false"
+                                style="background-color: var(--cream-deep); color: var(--ink-soft);">白噪音</button><button
+                                type="button"
+                                class="inline-flex items-center gap-1 rounded-full px-3.5 py-1.5 text-[12px] font-bold transition-colors"
+                                aria-pressed="false"
+                                style="background-color: var(--cream-deep); color: var(--ink-soft);">🌧️
+                                雨声</button><button type="button"
+                                class="inline-flex items-center gap-1 rounded-full px-3.5 py-1.5 text-[12px] font-bold transition-colors"
+                                aria-pressed="false"
+                                style="background-color: var(--cream-deep); color: var(--ink-soft);">☕
+                                咖啡馆</button><button type="button"
+                                class="inline-flex items-center gap-1 rounded-full px-3.5 py-1.5 text-[12px] font-bold transition-colors"
+                                aria-pressed="false"
+                                style="background-color: var(--cream-deep); color: var(--ink-soft);">🌲
+                                森林</button><button type="button"
+                                class="inline-flex items-center gap-1 rounded-full px-3.5 py-1.5 text-[12px] font-bold transition-colors"
+                                aria-pressed="false"
+                                style="background-color: var(--cream-deep); color: var(--ink-soft);">⌨️ 键盘</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative" style="opacity: 1; transform: none;">
+                    <div class="absolute inset-0 rounded-full"
+                        style="background: var(--grape); opacity: 0.4; transform: scale(1.03626);"></div><button
+                        class="relative flex w-full items-center justify-center gap-3 rounded-full py-5 text-[16px] font-black text-white transition-all duration-200"
+                        tabindex="0"
+                        style="background: linear-gradient(135deg, var(--grape) 0%, var(--grape-deep) 100%); box-shadow: 0 8px 0 var(--grape-deep), 0 15px 35px -8px rgba(79,70,229,0.5);">
+                        <div style="transform: translateX(0.0543082px);"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-play size-6 fill-current" aria-hidden="true">
+                                <path
+                                    d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z">
+                                </path>
+                            </svg></div>开始专注 25 分钟<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-flame size-5"
+                            aria-hidden="true">
+                            <path
+                                d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <p class="mt-5 text-center text-[12px]" style="color: var(--ink-faint); opacity: 1;">💪 保持专注，你就是自己的英雄！
+                </p>
+            </div>
+        </div>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,518 @@
+<html lang="zh-CN">
+
+<head>
+    <script>(function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/site-base.css">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161629">
+    <meta name="theme-color" content="#050807">
+    <title>二进制书房 - 智能刷题平台</title>
+    <meta name="description" content="真题练习、错题复习，稳稳通过考试">
+    <link rel="shortcut icon" href="../images/icon.png">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="apple-touch-icon" href="../images/icon-180.png">
+    <link rel="stylesheet" href="../css/fredoka.css">
+</head>
+
+<body class="font-sans antialiased"><!--$--><!--/$-->
+    <aside class="v3-theme fixed left-0 top-0 bottom-0 z-30 hidden w-[260px] md:block v41-rail"
+        style="border-right: 2px solid var(--line); background-color: var(--cream);">
+        <div class="v41-sidebar v3-theme flex h-full flex-col v41-scroll-thin" style="background-color: var(--cream);">
+            <div class="px-4 pt-4 pb-2 v41-side-brand"><a class="flex items-center gap-2.5" href="dashboard.html"><span
+                        class="v41-brand-logo" aria-hidden="true"></span>
+                    <div class="leading-tight">
+                        <div class="text-[17px] font-extrabold tracking-tight"
+                            style="color: var(--ink); font-family: var(--font-cn);">二进制书房</div>
+                    </div>
+                </a></div>
+            <nav class="flex-1 overflow-y-auto px-3 v41-scroll-thin scroll-fade-y">
+                <div class="v41-sidebar-group">
+                    <p class="v41-sidebar-group-title"><span class="v41-g-ico">📚</span><span
+                            class="v41-g-txt">学习</span></p><a class="v41-nav-item" href="dashboard.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                            </path>
+                        </svg><span class="flex-1">首页</span></a><a class="v41-nav-item" href="library.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-open size-[18px] shrink-0" aria-hidden="true">
+                            <path
+                                d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2">
+                            </path>
+                        </svg><span class="flex-1">题库</span></a><a class="v41-nav-item" href="classes.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-users size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg><span class="flex-1">班级</span></a><a class="v41-nav-item" href="mistakes.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-alert size-[18px] shrink-0" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" x2="12" y1="8" y2="12"></line>
+                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                        </svg><span class="flex-1">错题本</span></a><a class="v41-nav-item" href="practice.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-target size-[18px] shrink-0" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg><span class="flex-1">专项练习</span></a><a class="v41-nav-item" href="records.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-history size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                            <path d="M12 7v5l4 2"></path>
+                        </svg><span class="flex-1">做题记录</span></a>
+                </div>
+                <div class="v41-sidebar-group">
+                    <p class="v41-sidebar-group-title v41-sidebar-more-toggle"><span class="v41-g-ico">🧰</span><span
+                            class="v41-g-txt">小工具</span></p>
+                </div>
+            </nav>
+            <div class="px-3 pb-4 pt-3 v41-side-foot" style="border-top: 2px solid var(--line);">
+                <div class="flex items-center gap-2 p-2 rounded-xl"
+                    style="background-color: var(--grape-soft); border: 2px solid var(--line);"><a
+                        class="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg px-1 py-0.5 transition-all"
+                        href="settings.html" style="border:0;">
+                        <div class="flex shrink-0 items-center justify-center rounded-full overflow-hidden"
+                            style="width: 36px; height: 36px"><img src="../images/avatar.jpg" alt=""
+                                style="width:100%; height:100%; object-fit:cover; border-radius:9999px">
+                        </div>
+                        <div class="min-w-0 flex-1 leading-tight">
+                            <p class="text-[13px] font-bold truncate" title="弥彦"
+                                style="color: var(--ink); font-family: var(--font-cn);">弥彦</p>
+                        </div>
+                    </a>
+                    <div class="flex shrink-0 items-center gap-1.5"><button aria-label="切换主题模式" title="跟随系统（点击切到日间）"
+                            class="flex size-8 shrink-0 items-center justify-center rounded-lg transition-all duration-150"
+                            style="background-color: var(--paper); color: var(--ink-soft)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-monitor size-3.5" aria-hidden="true">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg></button><button aria-label="退出登录" title="退出登录"
+                            class="flex size-8 shrink-0 items-center justify-center rounded-lg transition-all"
+                            style="background-color: var(--paper); color: var(--ink-faint)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-log-out size-3.5" aria-hidden="true">
+                                <path d="m16 17 5-5-5-5"></path>
+                                <path d="M21 12H9"></path>
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            </svg></button></div>
+                </div>
+            </div>
+    </aside><button type="button" aria-label="打开菜单"
+        class="v3-theme fixed left-4 top-4 z-30 inline-flex size-10 items-center justify-center rounded-xl md:hidden"
+        style="background-color: var(--paper); color: var(--ink); box-shadow: 3px 3px 0 var(--ink)"><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu size-5" aria-hidden="true">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+        </svg></button>
+    <header class="v3-theme v41-topbar" id="appTopbar">
+  <div class="v41-tb-right">
+    <a class="v41-tb-search" href="library.html" aria-label="搜索题目">
+      <svg class="v41-tb-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <span class="v41-tb-txt">搜索题目、章节…</span>
+      <kbd class="v41-tb-kbd">⌘K</kbd>
+    </a>
+    <button class="v41-tb-streak" type="button" aria-label="连续打卡天数">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-2.9 7-6.7 0-4.1-4.2-6.8-4.2-10.8C14.8 3 13.6 2 12 2c0 3.4-3 5-3 8.4 0 1.3.5 2.3 1.2 3.1C9 13.2 8 12.5 8 11c-1.2 1.4-2 3.1-2 5 0 3.5 2.7 6 6 6z"></path></svg>
+      <span>41 天</span>
+    </button>
+    <button class="v41-tb-bell" type="button" aria-label="通知">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 01-3.4 0"></path></svg>
+      <i class="v41-tb-dot" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+<main class="v3-theme min-h-screen pt-16 md:ml-[260px] md:pt-0 v41-main" style="background-color: var(--color-bg);">
+        <div class="px-6 py-8 md:px-10">
+            <div style="opacity: 1; transform: none;">
+                <h1 class="text-[28px] font-extrabold leading-tight md:text-[32px]" style="color: var(--ink);">设置</h1>
+                <p class="mt-1 text-[14px]" style="color: var(--ink-soft);">管理你的账号信息与偏好设置</p>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <h2 class="mb-5 text-[17px] font-extrabold" style="color: var(--ink);">个人信息</h2>
+                <div class="flex items-center gap-4">
+                    <div class="relative shrink-0"><button type="button" title="点击上传头像" aria-label="更换头像"
+                            class="relative flex size-[64px] items-center justify-center overflow-hidden rounded-full text-[26px] font-extrabold text-white transition-transform hover:scale-105 disabled:cursor-not-allowed disabled:opacity-60"
+                            style="background-color: var(--paper);"><img src="../images/avatar.jpg" alt=""
+                                style="width:100%; height:100%; object-fit:cover"><input
+                                accept="image/png,image/jpeg,image/webp,image/gif" class="hidden" type="file"></button>
+                        <div class="absolute z-10 flex size-6 items-center justify-center rounded-full"
+                            style="right:-6px;bottom:-6px;background-color:var(--paper);box-shadow:0 0 0 2px var(--paper),0 2px 8px rgba(0,0,0,.18);color:var(--ink-soft)">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-camera size-3.5" aria-hidden="true"
+                                >
+                                <path
+                                    d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z">
+                                </path>
+                                <circle cx="12" cy="13" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="min-w-0 flex-1">
+                        <div class="flex items-center gap-2"><span class="text-[18px] font-extrabold"
+                                style="color: var(--ink);">弥彦</span><span
+                                class="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-bold"
+                                style="background-color: var(--grape-soft); color: var(--grape-deep);"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-badge-check size-3" aria-hidden="true">
+                                    <path
+                                        d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z">
+                                    </path>
+                                    <path d="m9 12 2 2 4-4"></path>
+                                </svg>已验证账户</span></div>
+                        <div class="mt-1 flex items-center gap-1.5 text-[13px]" style="color: var(--ink-soft);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail size-3.5" aria-hidden="true">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>wyih1221@qq.com</div>
+                    </div>
+                    <div class="flex shrink-0 items-center gap-2"><button
+                            class="rounded-full border-2 px-4 py-2 text-[13px] font-bold transition-transform hover:-translate-y-0.5"
+                            style="background-color: var(--paper); color: var(--ink)">编辑资料</button>
+                    </div>
+                </div>
+                <div class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                    <div class="rounded-xl p-4" style="background-color: var(--cream);">
+                        <div class="text-[12px] font-bold" style="color: var(--ink-faint);">昵称</div>
+                        <div class="mt-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-user size-4 shrink-0" aria-hidden="true"
+                                style="color: var(--ink-faint);">
+                                <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg><span class="text-[15px] font-bold" style="color: var(--ink);">弥彦</span></div>
+                    </div>
+                    <div class="rounded-xl p-4" style="background-color: var(--cream);">
+                        <div class="text-[12px] font-bold" style="color: var(--ink-faint);">邮箱</div>
+                        <div class="mt-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-mail size-4 shrink-0" aria-hidden="true"
+                                style="color: var(--ink-faint);">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg><span class="truncate text-[15px] font-bold"
+                                style="color: var(--ink);">wyih1221@qq.com</span></div>
+                    </div>
+                    <div class="rounded-xl p-4" style="background-color: var(--cream);">
+                        <div class="text-[12px] font-bold" style="color: var(--ink-faint);">角色</div>
+                        <div class="mt-2 flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-crown size-4 shrink-0" aria-hidden="true"
+                                style="color: var(--ink-faint);">
+                                <path
+                                    d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z">
+                                </path>
+                                <path d="M5 21h14"></path>
+                            </svg><span class="text-[15px] font-bold" style="color: var(--ink);">学生</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <h2 class="mb-2 text-[17px] font-extrabold" style="color: var(--ink);">账户安全</h2><button
+                    class="mt-2 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--cream)]">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--grape-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock size-[20px]"
+                            aria-hidden="true" style="color: var(--grape-deep);">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="text-[15px] font-bold" style="color: var(--ink);">修改密码</div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">定期更换密码以保护账户安全</div>
+                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right size-4 shrink-0" aria-hidden="true"
+                        style="color: var(--ink-faint);">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </button><button
+                    class="mt-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--cream)]">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--mint-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-key-round size-[20px]"
+                            aria-hidden="true" style="color: var(--mint);">
+                            <path
+                                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z">
+                            </path>
+                            <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="flex items-center gap-2"><span class="text-[15px] font-bold"
+                                style="color: var(--ink);">AI 服务商 Key</span></div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">绑定你自己的 TokenDance Key，AI 功能不限次使用
+                        </div>
+                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right size-4 shrink-0" aria-hidden="true"
+                        style="color: var(--ink-faint);">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <h2 class="mb-2 text-[17px] font-extrabold" style="color: var(--ink);">法律文档</h2><a target="_blank"
+                    class="mt-2 flex w-full items-center gap-3 rounded-xl px-3 py-3 transition-colors hover:bg-[var(--cream)]"
+                    href="terms.html">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--grape-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text size-[20px]"
+                            aria-hidden="true" style="color: var(--grape-deep);">
+                            <path
+                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
+                            </path>
+                            <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                            <path d="M10 9H8"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="text-[15px] font-bold" style="color: var(--ink);">用户协议</div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">服务说明、行为规范、知识产权条款</div>
+                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right size-4 shrink-0" aria-hidden="true"
+                        style="color: var(--ink-faint);">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </a><a target="_blank"
+                    class="mt-1 flex w-full items-center gap-3 rounded-xl px-3 py-3 transition-colors hover:bg-[var(--cream)]"
+                    href="privacy.html">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--grape-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-shield-check size-[20px]" aria-hidden="true"
+                            style="color: var(--grape-deep);">
+                            <path
+                                d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                            </path>
+                            <path d="m9 12 2 2 4-4"></path>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="text-[15px] font-bold" style="color: var(--ink);">隐私政策</div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">信息收集、使用、保护及你的数据权利</div>
+                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right size-4 shrink-0" aria-hidden="true"
+                        style="color: var(--ink-faint);">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <div class="mb-1 flex items-center gap-2">
+                    <h2 class="text-[17px] font-extrabold" style="color: var(--ink);">外观设置</h2><span
+                        class="inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-bold"
+                        style="background-color: var(--grape-soft); color: var(--grape-deep);"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-monitor size-3" aria-hidden="true">
+                            <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                            <line x1="8" x2="16" y1="21" y2="21"></line>
+                            <line x1="12" x2="12" y1="17" y2="21"></line>
+                        </svg>当前：日间</span>
+                </div>
+                <p class="mb-4 text-[12px]" style="color: var(--ink-soft);">选择主题模式，跟随系统会根据电脑深浅色自动切换</p>
+                <div class="grid grid-cols-2 gap-3 sm:grid-cols-4"><button type="button" title="根据电脑深浅色自动切换"
+                        aria-pressed="true"
+                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
+                        style="background-color: var(--grape-soft); box-shadow: 3px 3px 0 var(--grape-soft2)">
+                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110 text-white"
+                            style="background-color: var(--grape)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-monitor size-5" aria-hidden="true">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg></div>
+                        <div>
+                            <div class="text-[13px] font-extrabold" style="color: var(--grape-deep);">跟随系统</div>
+                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">根据电脑深浅色自动切换
+                            </div>
+                        </div><span
+                            class="absolute right-1.5 top-1.5 flex size-4 items-center justify-center rounded-full"
+                            style="background-color: var(--grape);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-check size-2.5 text-white" aria-hidden="true">
+                                <path d="M20 6 9 17l-5-5"></path>
+                            </svg></span>
+                    </button><button type="button" title="元气紫主色，浅色背景" aria-pressed="false"
+                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
+                        style="background-color: var(--cream)">
+                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110"
+                            style="background-color: var(--paper); color: var(--ink-soft);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-sun size-5" aria-hidden="true">
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 20v2"></path>
+                                <path d="m4.93 4.93 1.41 1.41"></path>
+                                <path d="m17.66 17.66 1.41 1.41"></path>
+                                <path d="M2 12h2"></path>
+                                <path d="M20 12h2"></path>
+                                <path d="m6.34 17.66-1.41 1.41"></path>
+                                <path d="m19.07 4.93-1.41 1.41"></path>
+                            </svg></div>
+                        <div>
+                            <div class="text-[13px] font-extrabold" style="color: var(--ink);">日间模式</div>
+                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">元气紫主色，浅色背景
+                            </div>
+                        </div>
+                    </button><button type="button" title="琥珀主色，深色护眼" aria-pressed="false"
+                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
+                        style="background-color: var(--cream)">
+                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110"
+                            style="background-color: var(--paper); color: var(--ink-soft);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-moon size-5" aria-hidden="true">
+                                <path
+                                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
+                                </path>
+                            </svg></div>
+                        <div>
+                            <div class="text-[13px] font-extrabold" style="color: var(--ink);">夜间模式</div>
+                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">琥珀主色，深色护眼
+                            </div>
+                        </div>
+                    </button><button type="button" title="翡翠绿主色，深夜专注" aria-pressed="false"
+                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
+                        style="background-color: var(--cream)">
+                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110"
+                            style="background-color: var(--paper); color: var(--ink-soft);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-flame size-5" aria-hidden="true">
+                                <path
+                                    d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4">
+                                </path>
+                            </svg></div>
+                        <div>
+                            <div class="text-[13px] font-extrabold" style="color: var(--ink);">冲刺模式</div>
+                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">翡翠绿主色，深夜专注
+                            </div>
+                        </div>
+                    </button></div>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <h2 class="mb-2 text-[17px] font-extrabold" style="color: var(--ink);">帮助与引导</h2><button
+                    class="mt-2 flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--cream)]">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--grape-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-question-mark size-[20px]" aria-hidden="true"
+                            style="color: var(--grape-deep);">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                            <path d="M12 17h.01"></path>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="text-[15px] font-bold" style="color: var(--ink);">查看使用指南</div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">重新学习如何使用二进制书房</div>
+                    </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-right size-4 shrink-0" aria-hidden="true"
+                        style="color: var(--ink-faint);">
+                        <path d="m9 18 6-6-6-6"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <button
+                    class="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--peach-soft)]">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--peach-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-log-out size-[20px]"
+                            aria-hidden="true" style="color: var(--peach-deep);">
+                            <path d="m16 17 5-5-5-5"></path>
+                            <path d="M21 12H9"></path>
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="text-[15px] font-bold" style="color: var(--peach-deep);">退出登录</div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">退出当前账号，下次需要重新登录</div>
+                    </div>
+                </button>
+            </div>
+            <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
+                style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
+                <button
+                    class="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--peach-soft)]">
+                    <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
+                        style="background-color: var(--peach-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-trash2 lucide-trash-2 size-[20px]" aria-hidden="true"
+                            style="color: var(--peach-deep);">
+                            <path d="M10 11v6"></path>
+                            <path d="M14 11v6"></path>
+                            <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
+                            <path d="M3 6h18"></path>
+                            <path d="M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                        </svg></div>
+                    <div class="min-w-0 flex-1">
+                        <div class="text-[15px] font-bold" style="color: var(--peach-deep);">注销账号</div>
+                        <div class="mt-0.5 text-[12px]" style="color: var(--ink-soft);">账号将无法登录，个人信息匿名化处理</div>
+                    </div>
+                </button>
+            </div>
+            <div class="mt-6 mb-10 flex items-center justify-center gap-2 pb-8" style="opacity: 1; transform: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-shield-check size-4" aria-hidden="true" style="color: var(--grape);">
+                    <path
+                        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                    </path>
+                    <path d="m9 12 2 2 4-4"></path>
+                </svg><span class="text-[13px] font-extrabold" style="color: var(--ink);">二进制书房</span><span
+                    class="text-[13px]" style="color: var(--ink-faint);">· 智能刷题平台 v1.0</span>
+            </div>
+        </div>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

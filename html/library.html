@@ -1,0 +1,338 @@
+<html lang="zh-CN">
+
+<head>
+    <script>(function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/site-base.css">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161629">
+    <meta name="theme-color" content="#050807">
+    <title>二进制书房 - 智能刷题平台</title>
+    <meta name="description" content="真题练习、错题复习，稳稳通过考试">
+    <link rel="shortcut icon" href="../images/icon.png">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="apple-touch-icon" href="../images/icon-180.png">
+    <link rel="stylesheet" href="../css/fredoka.css">
+</head>
+
+<body class="font-sans antialiased"><!--$--><!--/$-->
+    <aside class="v3-theme fixed left-0 top-0 bottom-0 z-30 hidden w-[260px] md:block v41-rail"
+        style="border-right: 2px solid var(--line); background-color: var(--cream);">
+        <div class="v41-sidebar v3-theme flex h-full flex-col v41-scroll-thin" style="background-color: var(--cream);">
+            <div class="px-4 pt-4 pb-2 v41-side-brand"><a class="flex items-center gap-2.5" href="dashboard.html"><span
+                        class="v41-brand-logo" aria-hidden="true"></span>
+                    <div class="leading-tight">
+                        <div class="text-[17px] font-extrabold tracking-tight"
+                            style="color: var(--ink); font-family: var(--font-cn);">二进制书房</div>
+                    </div>
+                </a></div>
+            <nav class="flex-1 overflow-y-auto px-3 v41-scroll-thin scroll-fade-y">
+                <div class="v41-sidebar-group">
+                    <p class="v41-sidebar-group-title"><span class="v41-g-ico">📚</span><span
+                            class="v41-g-txt">学习</span></p><a class="v41-nav-item" href="dashboard.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-house size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+                            <path
+                                d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+                            </path>
+                        </svg><span class="flex-1">首页</span></a><a class="v41-nav-item active" href="library.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-open size-[18px] shrink-0" aria-hidden="true">
+                            <path
+                                d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2">
+                            </path>
+                        </svg><span class="flex-1">题库</span></a><a class="v41-nav-item" href="classes.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-users size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                        </svg><span class="flex-1">班级</span></a><a class="v41-nav-item" href="mistakes.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-alert size-[18px] shrink-0" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" x2="12" y1="8" y2="12"></line>
+                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                        </svg><span class="flex-1">错题本</span></a><a class="v41-nav-item" href="practice.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-target size-[18px] shrink-0" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg><span class="flex-1">专项练习</span></a><a class="v41-nav-item" href="records.html"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-history size-[18px] shrink-0" aria-hidden="true">
+                            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+                            <path d="M3 3v5h5"></path>
+                            <path d="M12 7v5l4 2"></path>
+                        </svg><span class="flex-1">做题记录</span></a>
+                </div>
+                <div class="v41-sidebar-group">
+                    <p class="v41-sidebar-group-title v41-sidebar-more-toggle"><span class="v41-g-ico">🧰</span><span
+                            class="v41-g-txt">小工具</span></p>
+                </div>
+            </nav>
+            <div class="px-3 pb-4 pt-3 v41-side-foot" style="border-top: 2px solid var(--line);">
+                <div class="flex items-center gap-2 p-2 rounded-xl"
+                    style="background-color: var(--grape-soft); border: 2px solid var(--line);"><a
+                        class="flex min-w-0 flex-1 items-center gap-2.5 rounded-lg px-1 py-0.5 transition-all"
+                        href="settings.html" style="border:0;">
+                        <div class="flex shrink-0 items-center justify-center rounded-full overflow-hidden"
+                            style="width: 36px; height: 36px"><img src="../images/avatar.jpg" alt=""
+                                style="width:100%; height:100%; object-fit:cover; border-radius:9999px">
+                        </div>
+                        <div class="min-w-0 flex-1 leading-tight">
+                            <p class="text-[13px] font-bold truncate" title="弥彦"
+                                style="color: var(--ink); font-family: var(--font-cn);">弥彦</p>
+                        </div>
+                    </a>
+                    <div class="flex shrink-0 items-center gap-1.5"><button aria-label="切换主题模式" title="跟随系统（点击切到日间）"
+                            class="flex size-8 shrink-0 items-center justify-center rounded-lg transition-all duration-150"
+                            style="background-color: var(--paper); color: var(--ink-soft)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-monitor size-3.5" aria-hidden="true">
+                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                                <line x1="8" x2="16" y1="21" y2="21"></line>
+                                <line x1="12" x2="12" y1="17" y2="21"></line>
+                            </svg></button><button aria-label="退出登录" title="退出登录"
+                            class="flex size-8 shrink-0 items-center justify-center rounded-lg transition-all"
+                            style="background-color: var(--paper); color: var(--ink-faint)"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-log-out size-3.5" aria-hidden="true">
+                                <path d="m16 17 5-5-5-5"></path>
+                                <path d="M21 12H9"></path>
+                                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                            </svg></button></div>
+                </div>
+            </div>
+    </aside><button type="button" aria-label="打开菜单"
+        class="v3-theme fixed left-4 top-4 z-30 inline-flex size-10 items-center justify-center rounded-xl md:hidden"
+        style="background-color: var(--paper); color: var(--ink); box-shadow: 3px 3px 0 var(--ink)"><svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu size-5" aria-hidden="true">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+        </svg></button>
+    <header class="v3-theme v41-topbar" id="appTopbar">
+  <div class="v41-tb-right">
+    <a class="v41-tb-search" href="library.html" aria-label="搜索题目">
+      <svg class="v41-tb-ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>
+      <span class="v41-tb-txt">搜索题目、章节…</span>
+      <kbd class="v41-tb-kbd">⌘K</kbd>
+    </a>
+    <button class="v41-tb-streak" type="button" aria-label="连续打卡天数">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-2.9 7-6.7 0-4.1-4.2-6.8-4.2-10.8C14.8 3 13.6 2 12 2c0 3.4-3 5-3 8.4 0 1.3.5 2.3 1.2 3.1C9 13.2 8 12.5 8 11c-1.2 1.4-2 3.1-2 5 0 3.5 2.7 6 6 6z"></path></svg>
+      <span>41 天</span>
+    </button>
+    <button class="v41-tb-bell" type="button" aria-label="通知">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.7 21a2 2 0 01-3.4 0"></path></svg>
+      <i class="v41-tb-dot" aria-hidden="true"></i>
+    </button>
+  </div>
+</header>
+<main class="v3-theme min-h-screen pt-16 md:ml-[260px] md:pt-0 v41-main" style="background-color: var(--color-bg);">
+        <div class="px-6 pb-8 pt-0 md:px-10 md:py-8">
+            <div class="v3-page-head">
+                <div>
+                    <h2>题库</h2>
+                    <p class="v3-sub">管理你的题库，随时开始练习</p>
+                </div>
+                <div class="flex items-center gap-2"><a title="进入番茄钟专注模式，25 分钟沉浸自习" href="focus.html"><button
+                            type="button"
+                            class="flex items-center gap-1.5 px-4 py-2.5 text-[12px] font-bold transition-colors hover:border-grape hover:text-grape"
+                            style="color: var(--grape-deep); border-radius: 9999px"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-timer size-3.5" aria-hidden="true">
+                                <line x1="10" x2="14" y1="2" y2="2"></line>
+                                <line x1="12" x2="15" y1="14" y2="11"></line>
+                                <circle cx="12" cy="14" r="8"></circle>
+                            </svg>🎯 专注模式刷题</button></a></div>
+            </div>
+            <div class="mt-2 inline-flex items-center gap-1 rounded-full p-1"
+                style="background-color: var(--cream-deep); border: 2px solid var(--line);"><button
+                    class="flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[13px] font-bold transition-all duration-150"
+                    style="background-color: var(--paper); color: var(--grape-deep); box-shadow: 3px 3px 0 var(--ink)"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-folder-open size-3.5" aria-hidden="true">
+                        <path
+                            d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2">
+                        </path>
+                    </svg>我的题库</button><button
+                    class="flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[13px] font-bold transition-all duration-150"
+                    style="color: var(--ink-soft)"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-graduation-cap size-3.5" aria-hidden="true">
+                        <path
+                            d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                        </path>
+                        <path d="M22 10v6"></path>
+                        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                    </svg>同校</button><button
+                    class="flex items-center gap-1.5 rounded-full px-4 py-1.5 text-[13px] font-bold transition-all duration-150"
+                    style="color: var(--ink-soft)"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-store size-3.5" aria-hidden="true">
+                        <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
+                        <path
+                            d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244">
+                        </path>
+                        <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"></path>
+                    </svg>公开广场</button></div>
+            <div class="v3-stats mt-5">
+                <div class="v3-stat">
+                    <div class="v3-stat-ic bg-grape-soft text-grape-deep"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-folder-open size-5" aria-hidden="true">
+                            <path
+                                d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2">
+                            </path>
+                        </svg></div>
+                    <div>
+                        <div class="v3-stat-label">资料总数</div>
+                        <div class="v3-stat-val">0<em>份</em></div>
+                        <div class="v3-stat-trend up">↑ 本周 +0</div>
+                    </div>
+                </div>
+                <div class="v3-stat">
+                    <div class="v3-stat-ic bg-mint-soft text-mint"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big size-5"
+                            aria-hidden="true">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg></div>
+                    <div>
+                        <div class="v3-stat-label">已解析题目</div>
+                        <div class="v3-stat-val">0<em>题</em></div>
+                        <div class="v3-stat-trend up">↑ 持续积累</div>
+                    </div>
+                </div>
+                <div class="v3-stat">
+                    <div class="v3-stat-ic bg-peach-soft text-peach-deep"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-target size-5" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg></div>
+                    <div>
+                        <div class="v3-stat-label">平均正确率</div>
+                        <div class="v3-stat-val">—</div>
+                        <div class="v3-stat-trend" style="color: var(--ink-faint);">做题后统计</div>
+                    </div>
+                </div>
+                <div class="v3-stat">
+                    <div class="v3-stat-ic bg-mango-soft text-mango"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers size-5"
+                            aria-hidden="true">
+                            <path
+                                d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z">
+                            </path>
+                            <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
+                            <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
+                        </svg></div>
+                    <div>
+                        <div class="v3-stat-label">解析完成</div>
+                        <div class="v3-stat-val">100<em>%</em></div>
+                        <div class="v3-stat-trend up">↑ 全部就绪</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4 mt-5"><button type="button"
+                    class="relative w-full overflow-hidden rounded-2xl p-5 text-left transition-all" tabindex="0"
+                    style="background: linear-gradient(135deg, var(--grape) 0%, var(--grape-deep) 100%); box-shadow: rgba(45, 42, 74, 0.12) 0px 6px 0px 0px, rgba(124, 92, 252, 0.35) 0px 12px 28px -8px">
+                    <div class="pointer-events-none absolute -right-6 -top-6 size-24 opacity-20"
+                        style="background: var(--peach); border-radius: var(--blob-1);"></div>
+                    <div class="relative z-10 flex items-center gap-4">
+                        <div class="flex size-12 shrink-0 items-center justify-center rounded-2xl"
+                            style="background-color: rgba(255, 255, 255, 0.18);"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-sparkles size-6 text-white" aria-hidden="true">
+                                <path
+                                    d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                                </path>
+                                <path d="M20 2v4"></path>
+                                <path d="M22 4h-4"></path>
+                                <circle cx="4" cy="20" r="2"></circle>
+                            </svg></div>
+                        <div class="min-w-0 flex-1">
+                            <p class="text-[16px] font-extrabold text-white" style="font-family: var(--font-cn);">一键智能组卷
+                            </p>
+                            <p class="mt-0.5 text-[12px] text-white/80">基于错题记录 + 薄弱知识点，AI 生成专属试卷</p>
+                        </div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-arrow-right size-5 shrink-0 text-white/80"
+                            aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </div>
+                </button></div>
+            <div class="mb-4 flex flex-wrap items-center gap-3">
+                <div class="v3-search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-search v3-search-ic size-4" aria-hidden="true">
+                        <path d="m21 21-4.34-4.34"></path>
+                        <circle cx="11" cy="11" r="8"></circle>
+                    </svg><input placeholder="搜索资料名称、学科..." value=""></div>
+                <div class="v3-chips"><button type="button" class="v3-chip on">全部</button><button type="button"
+                        class="v3-chip ">PDF</button><button type="button" class="v3-chip ">Word</button><button
+                        type="button" class="v3-chip ">图片</button><button type="button" class="v3-chip ">已解析</button>
+                </div>
+            </div>
+            <div class="v3-sec-head">
+                <div class="v3-sec-title">我的题库<span class="ml-2 rounded-full px-2 py-0.5 text-[11px] font-bold"
+                        style="background: var(--grape-soft); color: var(--grape-deep);">来源：我上传的</span></div>
+                <div class="v3-sec-more">按最近上传排序 ↓</div>
+            </div>
+            <div class="flex flex-col items-center justify-center py-20" style="opacity: 1; transform: none;">
+                <div class="flex size-16 items-center justify-center rounded-full bg-grape-soft"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-folder-open size-8 text-grape" aria-hidden="true">
+                        <path
+                            d="m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2">
+                        </path>
+                    </svg></div>
+                <p class="mt-4 text-[15px] font-bold text-ink">还没有题库</p>
+                <p class="mt-1 text-sm text-ink-soft">可以先做官方真题，再按章节专项突破</p>
+                <div class="mt-5 flex flex-wrap items-center justify-center gap-3"><a href="practice.html"><button
+                            type="button"
+                            class="flex items-center gap-1.5 px-5 py-2.5 text-[13px] font-extrabold transition-transform hover:shadow-[4px_4px_0_var(--ink)] text-white v41-btn-grape"
+                           ><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-book-open size-4" aria-hidden="true">
+                                <path d="M12 7v14"></path>
+                                <path
+                                    d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                                </path>
+                            </svg>做官方真题</button></a></div>
+            </div>
+        </div>
+    </main>
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

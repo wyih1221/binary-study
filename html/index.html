@@ -1,0 +1,701 @@
+<html lang="zh-CN">
+
+<head>
+    <script>(function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/site-base.css">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FFFFFF">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#161629">
+    <meta name="theme-color" content="#050807">
+    <title>二进制书房 - 智能刷题平台</title>
+    <meta name="description" content="真题练习、错题复习，稳稳通过考试">
+    <link rel="shortcut icon" href="../images/icon.png">
+    <link rel="icon" href="../images/icon.png">
+    <link rel="apple-touch-icon" href="../images/icon-180.png">
+    <link rel="stylesheet" href="../css/fredoka.css">
+</head>
+
+<body class="font-sans antialiased"><!--$-->
+    <div class="v3-theme min-h-screen overflow-x-hidden"
+        style="background-color:var(--v3-bg, #EEF2FF);color:var(--ink, #1E1B4B);font-family:&quot;Plus Jakarta Sans&quot;, &quot;PingFang SC&quot;, system-ui, sans-serif">
+        <nav class="fixed top-0 left-0 z-50 w-full transition-all duration-300"
+            style="height:64px; border-bottom:2px solid transparent">
+            <div class="mx-auto flex h-full max-w-[1200px] items-center justify-between px-6 lg:px-8"><a
+                    class="flex items-center gap-2.5" href=""><span class="v41-brand-logo"
+                        aria-hidden="true"></span><span class="text-xl font-extrabold tracking-tight"
+                        >二进制书房</span></a>
+                <div class="hidden items-center gap-7 md:flex"><a href="#how"
+                        class="transition-colors hover:text-[var(--grape-deep)]"
+                        style="color:var(--ink-soft, #4338CA);font-weight:700;font-size:15px">怎么用</a><a href="#reviews"
+                        class="transition-colors hover:text-[var(--grape-deep)]"
+                        style="color:var(--ink-soft, #4338CA);font-weight:700;font-size:15px">用户评价</a><a
+                        href="dashboard.html"><span class="cursor-pointer text-[15px] font-bold transition-colors"
+                            style="color:var(--ink-soft, #4338CA)">登录</span></a><a href="dashboard.html"><button
+                            class="!px-5 !py-2.5 !text-[15px] text-white"
+                            style="display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:999px; font-weight:700; transition:transform .15s ease, box-shadow .15s ease; background:var(--grape-deep, #4338CA); box-shadow:3px 3px 0 var(--ink, #1E1B4B)">免费开始</button></a>
+                </div><button class="flex size-10 items-center justify-center rounded-xl transition-colors md:hidden"
+                    style="background-color:var(--grape-soft, #EEF2FF)"
+                    aria-label="菜单"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="lucide lucide-menu size-5" aria-hidden="true"
+                        style="color:var(--grape-deep, #4338CA)">
+                        <path d="M4 5h16"></path>
+                        <path d="M4 12h16"></path>
+                        <path d="M4 19h16"></path>
+                    </svg></button>
+            </div>
+        </nav>
+        <section class="relative flex min-h-screen items-center px-6 pb-20 pt-28 lg:px-8" style="overflow:hidden">
+            <div class="relative z-10 mx-auto grid w-full max-w-[1200px] items-center gap-12 lg:grid-cols-2 lg:gap-16">
+                <div class="flex flex-col items-start">
+                    <div class="mb-6 inline-flex items-center gap-2 rounded-full px-4 py-2"
+                        style="background: var(--grape-soft, #EEF2FF); border: 2px solid var(--grape, #4F46E5); opacity: 1; transform: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-sparkles size-4" aria-hidden="true"
+                            style="color:var(--grape-deep, #4338CA)">
+                            <path
+                                d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z">
+                            </path>
+                            <path d="M20 2v4"></path>
+                            <path d="M22 4h-4"></path>
+                            <circle cx="4" cy="20" r="2"></circle>
+                        </svg><span class="text-[14px] font-bold"
+                            style="color:var(--grape-deep, #4338CA)">AI驱动的大学生刷题社区</span>
+                    </div>
+                    <h1 class="text-balance text-[clamp(42px,6vw,64px)] font-black leading-[1.05] tracking-tight"
+                        style="opacity: 1; transform: none">期末刷题上分，<br><span
+                            style="color:var(--grape-deep, #4338CA)">从这里开始</span><span class="ml-2 inline-block"
+                            style="transform:rotate(-8deg)">✨</span></h1>
+                    <p class="mt-6 max-w-[520px] text-[19px] leading-[1.7]"
+                        style="color: var(--ink-soft, #4338CA); opacity: 1; transform: none;">内置历年真题随时练，<strong
+                            style="color:var(--ink, #1E1B4B)">选中即判分</strong>，错题自动归集、专项突破薄弱点，和同学一起刷题通关。</p>
+                    <div class="mt-8 flex flex-wrap items-center gap-4" style="opacity: 1; transform: none;"><a
+                            href="library.html"><button class="text-white"
+                                style="display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:999px; font-weight:700; font-size:15px; padding:12px 24px; transition:transform .15s ease, box-shadow .15s ease; background:var(--grape-deep, #4338CA); box-shadow:3px 3px 0 var(--ink, #1E1B4B)"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-target size-5" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>先做一套官方真题<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-arrow-right size-5" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg></button></a><a href="dashboard.html"><button
+                                style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 999px; font-weight: 700; font-size: 15px; padding: 12px 24px; transition: transform 0.15s, box-shadow 0.15s; background: var(--paper, #FFFFFF); box-shadow: 3px 3px 0 var(--line-strong, #D1D5DB)">进入主页</button></a>
+                    </div>
+                    <div class="mt-6 flex flex-wrap items-center gap-4" style="opacity: 1; transform: none;">
+                        <div class="flex -space-x-2">
+                            <div class="flex size-8 items-center justify-center rounded-full border-2 border-white text-[12px] font-bold text-white"
+                                style="background:var(--grape, #4F46E5)">林</div>
+                            <div class="flex size-8 items-center justify-center rounded-full border-2 border-white text-[12px] font-bold text-white"
+                                style="background:var(--peach, #F97316)">杰</div>
+                            <div class="flex size-8 items-center justify-center rounded-full border-2 border-white text-[12px] font-bold text-white"
+                                style="background:var(--mint, #10B981)">雨</div>
+                            <div class="flex size-8 items-center justify-center rounded-full border-2 border-white text-[12px] font-bold text-white"
+                                style="background:var(--mango, #F59E0B)">明</div>
+                        </div>
+                        <div>
+                            <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-star size-4 fill-current" aria-hidden="true"
+                                    style="color:var(--mango, #F59E0B)">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star size-4 fill-current"
+                                    aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star size-4 fill-current"
+                                    aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star size-4 fill-current"
+                                    aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-star size-4 fill-current"
+                                    aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                    <path
+                                        d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                    </path>
+                                </svg></div>
+                            <p class="text-[13px] font-bold" style="color:var(--ink-soft, #4338CA)">391+ 精校题目已上线</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex flex-wrap gap-2" style="opacity: 1; transform: none;"><span
+                            class="inline-block rounded-xl px-3 py-2 text-[13px] font-bold transition-transform duration-150 hover:scale-105"
+                            style="background:var(--mango-soft, #FFFBEB);color:var(--mango);border:2px solid var(--line-strong, #D1D5DB);box-shadow:2px 2px 0 var(--line-strong, #D1D5DB);transform:rotate(-3deg)">🚀
+                            真题随时练</span><span
+                            class="inline-block rounded-xl px-3 py-2 text-[13px] font-bold transition-transform duration-150 hover:scale-105"
+                            style="background:var(--mint-soft, #D1FAE5);color:var(--mint);border:2px solid var(--line-strong, #D1D5DB);box-shadow:2px 2px 0 var(--line-strong, #D1D5DB);transform:rotate(2deg)">💯
+                            即时批改</span><span
+                            class="inline-block rounded-xl px-3 py-2 text-[13px] font-bold transition-transform duration-150 hover:scale-105"
+                            style="background:var(--peach-soft, #FFEDD5);color:var(--peach);border:2px solid var(--line-strong, #D1D5DB);box-shadow:2px 2px 0 var(--line-strong, #D1D5DB);transform:rotate(-2deg)">📚
+                            自动整理错题</span><span
+                            class="inline-block rounded-xl px-3 py-2 text-[13px] font-bold transition-transform duration-150 hover:scale-105"
+                            style="background:var(--grape-soft, #EEF2FF);color:var(--grape-deep, #4338CA);border:2px solid var(--line-strong, #D1D5DB);box-shadow:2px 2px 0 var(--line-strong, #D1D5DB);transform:rotate(1deg)">🎯
+                            专项突破</span></div>
+                </div>
+                <div class="relative" style="opacity: 1; transform: none;">
+                    <div class="relative">
+                        <div class="relative rounded-3xl p-6"
+                            style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:8px 8px 0 var(--ink, #1E1B4B)">
+                            <div class="mb-5 flex items-center justify-between">
+                                <div class="flex items-center gap-2"><span
+                                        class="rounded-xl px-3 py-1 text-[13px] font-bold"
+                                        style="background:var(--grape-soft, #EEF2FF);color:var(--grape-deep, #4338CA);border:2px solid var(--grape, #4F46E5)">单选题</span><span
+                                        class="text-[14px] font-bold" style="color:var(--ink-faint, #6B7280)">第 3 / 20
+                                        题</span></div><span class="rounded-xl px-3 py-1 text-[13px] font-bold"
+                                    style="background:var(--mint-soft, #D1FAE5);color:var(--mint);border:2px solid var(--mint, #10B981)">已答
+                                    2 题</span>
+                            </div>
+                            <p class="mb-5 text-[17px] font-bold leading-[1.6]" >下列哪项是
+                                TCP 协议的主要特征？</p>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex items-center gap-3 rounded-2xl p-4 transition-colors"
+                                    style="border:2px solid var(--line-strong, #D1D5DB)">
+                                    <span
+                                        class="flex size-8 shrink-0 items-center justify-center rounded-xl text-[14px] font-bold"
+                                        style="background:var(--grape-soft, #EEF2FF);color:var(--grape-deep, #4338CA)">A</span><span
+                                        class="text-[15px] font-bold leading-snug"
+                                        style="color:var(--ink-soft, #4338CA)">无连接，不可靠传输</span>
+                                </div>
+                                <div class="flex items-center gap-3 rounded-2xl p-4 transition-colors"
+                                    style="border:2px solid var(--mint, #10B981); background:var(--mint-soft, #D1FAE5)">
+                                    <span
+                                        class="flex size-8 shrink-0 items-center justify-center rounded-xl text-[14px] font-bold text-white"
+                                        style="background:var(--mint, #10B981)">B</span><span
+                                        class="text-[15px] font-bold leading-snug"
+                                        >面向连接，可靠传输</span><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-circle-check-big ml-auto size-5 shrink-0"
+                                        aria-hidden="true" style="color:var(--mint, #10B981)">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                </div>
+                                <div class="flex items-center gap-3 rounded-2xl p-4 transition-colors"
+                                    style="border:2px solid var(--line-strong, #D1D5DB)">
+                                    <span
+                                        class="flex size-8 shrink-0 items-center justify-center rounded-xl text-[14px] font-bold"
+                                        style="background:var(--grape-soft, #EEF2FF);color:var(--grape-deep, #4338CA)">C</span><span
+                                        class="text-[15px] font-bold leading-snug"
+                                        style="color:var(--ink-soft, #4338CA)">仅支持点对多点通信</span>
+                                </div>
+                                <div class="flex items-center gap-3 rounded-2xl p-4 transition-colors"
+                                    style="border:2px solid var(--line-strong, #D1D5DB)">
+                                    <span
+                                        class="flex size-8 shrink-0 items-center justify-center rounded-xl text-[14px] font-bold"
+                                        style="background:var(--grape-soft, #EEF2FF);color:var(--grape-deep, #4338CA)">D</span><span
+                                        class="text-[15px] font-bold leading-snug"
+                                        style="color:var(--ink-soft, #4338CA)">不进行流量控制</span>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center justify-between gap-4">
+                                <div class="h-3 flex-1 overflow-hidden rounded-full"
+                                    style="background:var(--grape-soft, #EEF2FF)">
+                                    <div class="h-full rounded-full"
+                                        style="width:15%;background:var(--grape-deep, #4338CA)"></div>
+                                </div><button
+                                    class="flex items-center gap-2 rounded-full px-5 py-2.5 text-[14px] font-bold text-white transition-all"
+                                    style="background:var(--grape-deep, #4338CA); box-shadow:0 3px 0 0 var(--ink, #1E1B4B)">下一题<svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-arrow-right size-4"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg></button>
+                            </div>
+                        </div>
+                        <div class="absolute -bottom-5 -right-4 flex items-center gap-3 rounded-2xl px-5 py-4"
+                            style="background: var(--paper, #FFFFFF); border: 3px solid var(--ink, #1E1B4B); box-shadow: 4px 4px 0 var(--ink, #1E1B4B); transform: translateY(-7.99999px);">
+                            <div class="flex size-10 items-center justify-center rounded-xl"
+                                style="background:var(--mint-soft, #D1FAE5)"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-check size-5" aria-hidden="true"
+                                    style="color:var(--mint, #10B981)">
+                                    <path d="M20 6 9 17l-5-5"></path>
+                                </svg></div>
+                            <div>
+                                <div class="text-[12px] font-bold" style="color:var(--ink-faint, #6B7280)">本题结果</div>
+                                <div class="text-[15px] font-bold" style="color:var(--mint, #10B981)">回答正确 💯</div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-4 -left-4 flex items-center gap-1.5 rounded-xl px-4 py-2 text-[13px] font-bold"
+                            style="background: var(--mango-soft, #FFFBEB); color: var(--mango); border: 2px solid var(--ink, #1E1B4B); box-shadow: 3px 3px 0 var(--ink, #1E1B4B); transform: rotate(2.22942deg);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-zap size-4" aria-hidden="true">
+                                <path
+                                    d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                                </path>
+                            </svg>AI 智能批改
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16"
+            style="background-color:var(--paper, #FFFFFF);border-top:2px solid var(--line, #E5E7EB);border-bottom:2px solid var(--line, #E5E7EB)">
+            <div class="mx-auto grid max-w-[1100px] grid-cols-2 gap-6 px-6 md:grid-cols-4 lg:px-8">
+                <div class="flex flex-col items-center" style="opacity:0;transform:translateY(24px)">
+                    <div class="mb-3 flex size-14 items-center justify-center rounded-2xl transition-transform duration-200 hover:scale-110 hover:-rotate-3"
+                        style="background:var(--grape-soft, #EEF2FF);border:2px solid var(--line-strong, #D1D5DB);box-shadow:3px 3px 0 var(--line-strong, #D1D5DB)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-book-open size-7" aria-hidden="true"
+                            style="color:var(--grape-deep, #4338CA)">
+                            <path d="M12 7v14"></path>
+                            <path
+                                d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text-[clamp(32px,5vw,44px)] font-black tracking-tight"
+                        >391+</div>
+                    <div class="mt-1 text-[14px] font-bold" style="color:var(--ink-soft, #4338CA)">精校题目</div>
+                </div>
+                <div class="flex flex-col items-center" style="opacity:0;transform:translateY(24px)">
+                    <div class="mb-3 flex size-14 items-center justify-center rounded-2xl transition-transform duration-200 hover:scale-110 hover:-rotate-3"
+                        style="background:var(--mint-soft, #D1FAE5);border:2px solid var(--line-strong, #D1D5DB);box-shadow:3px 3px 0 var(--line-strong, #D1D5DB)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-file-text size-7" aria-hidden="true" style="color:var(--mint)">
+                            <path
+                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
+                            </path>
+                            <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                            <path d="M10 9H8"></path>
+                            <path d="M16 13H8"></path>
+                            <path d="M16 17H8"></path>
+                        </svg>
+                    </div>
+                    <div class="text-[clamp(32px,5vw,44px)] font-black tracking-tight"
+                        >3 套</div>
+                    <div class="mt-1 text-[14px] font-bold" style="color:var(--ink-soft, #4338CA)">CET-4 真题</div>
+                </div>
+                <div class="flex flex-col items-center" style="opacity:0;transform:translateY(24px)">
+                    <div class="mb-3 flex size-14 items-center justify-center rounded-2xl transition-transform duration-200 hover:scale-110 hover:-rotate-3"
+                        style="background:var(--peach-soft, #FFEDD5);border:2px solid var(--line-strong, #D1D5DB);box-shadow:3px 3px 0 var(--line-strong, #D1D5DB)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-circle-check-big size-7" aria-hidden="true" style="color:var(--peach)">
+                            <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                            <path d="m9 11 3 3L22 4"></path>
+                        </svg>
+                    </div>
+                    <div class="text-[clamp(32px,5vw,44px)] font-black tracking-tight"
+                        >100%</div>
+                    <div class="mt-1 text-[14px] font-bold" style="color:var(--ink-soft, #4338CA)">题目附标准答案</div>
+                </div>
+                <div class="flex flex-col items-center" style="opacity:0;transform:translateY(24px)">
+                    <div class="mb-3 flex size-14 items-center justify-center rounded-2xl transition-transform duration-200 hover:scale-110 hover:-rotate-3"
+                        style="background:var(--mango-soft, #FFFBEB);border:2px solid var(--line-strong, #D1D5DB);box-shadow:3px 3px 0 var(--line-strong, #D1D5DB)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-zap size-7" aria-hidden="true" style="color:var(--mango)">
+                            <path
+                                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text-[clamp(32px,5vw,44px)] font-black tracking-tight"
+                        >3步</div>
+                    <div class="mt-1 text-[14px] font-bold" style="color:var(--ink-soft, #4338CA)">开始刷题</div>
+                </div>
+            </div>
+        </section>
+        <section id="how" class="py-24" style="background-color:var(--v3-bg, #EEF2FF)">
+            <div class="mx-auto max-w-[1200px] px-6 lg:px-8">
+                <div class="mb-16 text-center" style="opacity:0;transform:translateY(24px)"><span
+                        class="mb-4 inline-block rounded-full px-4 py-2 text-[14px] font-bold"
+                        style="background:var(--grape-soft, #EEF2FF);color:var(--grape-deep, #4338CA);border:2px solid var(--grape, #4F46E5)">超简单</span>
+                    <h2 class="text-balance text-[clamp(30px,4vw,44px)] font-black tracking-tight"
+                        >三步开启刷题上分</h2>
+                    <p class="mx-auto mt-4 max-w-[480px] text-[17px] leading-[1.7]"
+                        style="color:var(--ink-soft, #4338CA)">从选题到开始刷题，全程 AI 辅助，不用手动整理</p>
+                </div>
+                <div class="relative grid gap-6 md:grid-cols-3 md:gap-6">
+                    <div class="relative" style="opacity:0;transform:translateY(24px)">
+                        <div class="h-full rounded-3xl p-8 transition-all duration-150 hover:-translate-y-1"
+                            style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:6px 6px 0 var(--ink, #1E1B4B)">
+                            <div class="mb-4 flex items-center justify-between">
+                                <div class="flex size-16 items-center justify-center rounded-2xl"
+                                    style="background:var(--grape-soft, #EEF2FF);border:2px solid var(--line-strong, #D1D5DB)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-book-open size-8"
+                                        aria-hidden="true" style="color:var(--grape-deep, #4338CA)">
+                                        <path d="M12 7v14"></path>
+                                        <path
+                                            d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                                        </path>
+                                    </svg>
+                                </div><span class="text-[40px] font-black"
+                                    style="color:var(--grape-deep, #4338CA);opacity:0.3">01</span>
+                            </div>
+                            <h3 class="mb-2 text-[22px] font-bold" >选一套真题</h3>
+                            <p class="text-[15px] leading-[1.7]" style="color:var(--ink-soft, #4338CA)">
+                                从题库按科目、章节挑题，历年真题直接开做</p>
+                        </div>
+                        <div class="absolute -right-4 top-1/2 z-10 hidden -translate-y-1/2 md:block">
+                            <div class="flex size-10 items-center justify-center rounded-full text-white"
+                                style="background:var(--grape-deep, #4338CA);border:2px solid var(--ink, #1E1B4B);box-shadow:0 3px 0 0 var(--ink, #1E1B4B)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-right size-5" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity:0;transform:translateY(24px)">
+                        <div class="h-full rounded-3xl p-8 transition-all duration-150 hover:-translate-y-1"
+                            style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:6px 6px 0 var(--ink, #1E1B4B)">
+                            <div class="mb-4 flex items-center justify-between">
+                                <div class="flex size-16 items-center justify-center rounded-2xl"
+                                    style="background:var(--mint-soft, #D1FAE5);border:2px solid var(--line-strong, #D1D5DB)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-square-pen size-8"
+                                        aria-hidden="true" style="color:var(--mint)">
+                                        <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                                        <path
+                                            d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .505-.853z">
+                                        </path>
+                                    </svg>
+                                </div><span class="text-[40px] font-black"
+                                    style="color:var(--mint);opacity:0.3">02</span>
+                            </div>
+                            <h3 class="mb-2 text-[22px] font-bold" >在线作答</h3>
+                            <p class="text-[15px] leading-[1.7]" style="color:var(--ink-soft, #4338CA)">
+                                选中即判分，答完立刻看逐项解析，不用等批改</p>
+                        </div>
+                        <div class="absolute -right-4 top-1/2 z-10 hidden -translate-y-1/2 md:block">
+                            <div class="flex size-10 items-center justify-center rounded-full text-white"
+                                style="background:var(--grape-deep, #4338CA);border:2px solid var(--ink, #1E1B4B);box-shadow:0 3px 0 0 var(--ink, #1E1B4B)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-arrow-right size-5" aria-hidden="true">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative" style="opacity:0;transform:translateY(24px)">
+                        <div class="h-full rounded-3xl p-8 transition-all duration-150 hover:-translate-y-1"
+                            style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:6px 6px 0 var(--ink, #1E1B4B)">
+                            <div class="mb-4 flex items-center justify-between">
+                                <div class="flex size-16 items-center justify-center rounded-2xl"
+                                    style="background:var(--peach-soft, #FFEDD5);border:2px solid var(--line-strong, #D1D5DB)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-target size-8" aria-hidden="true"
+                                        style="color:var(--peach)">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <circle cx="12" cy="12" r="6"></circle>
+                                        <circle cx="12" cy="12" r="2"></circle>
+                                    </svg>
+                                </div><span class="text-[40px] font-black"
+                                    style="color:var(--peach);opacity:0.3">03</span>
+                            </div>
+                            <h3 class="mb-2 text-[22px] font-bold" >刷题上分</h3>
+                            <p class="text-[15px] leading-[1.7]" style="color:var(--ink-soft, #4338CA)">
+                                错题自动归集，按薄弱点专项突破，越刷越稳</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="py-24" style="background-color:var(--v3-bg, #EEF2FF)">
+            <div class="mx-auto max-w-[1200px] px-6 lg:px-8">
+                <div class="mb-14 text-center" style="opacity:0;transform:translateY(24px)"><span
+                        class="mb-4 inline-block rounded-full px-4 py-2 text-[14px] font-bold"
+                        style="background:var(--peach-soft, #FFEDD5);color:var(--peach);border:2px solid var(--peach, #F97316)">❤️
+                        真实评价</span>
+                    <h2 class="text-balance text-[clamp(30px,4vw,44px)] font-black tracking-tight"
+                        >同学们都在用</h2>
+                </div>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <div class="rounded-3xl p-6 transition-all duration-150 hover:-translate-y-1"
+                        style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:6px 6px 0 var(--ink, #1E1B4B);opacity:0;transform:translateY(24px)">
+                        <div class="mb-3 flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-star size-5 fill-current" aria-hidden="true"
+                                style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg></div>
+                        <p class="mb-5 text-[15px] leading-[1.7]" style="color:var(--ink-soft, #4338CA)">
+                            “<!-- -->题库里真题很全，做完自动判分，期末复习效率直接翻倍！错题本太香了，再也不用手动抄错题。<!-- -->”</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex size-11 items-center justify-center rounded-full text-[15px] font-extrabold text-white"
+                                style="background:linear-gradient(135deg, var(--grape, #4F46E5) 0%, var(--peach, #F97316) 100%)">
+                                林</div>
+                            <div>
+                                <div class="text-[15px] font-bold" >小林</div>
+                                <div class="text-[13px]" style="color:var(--ink-faint, #6B7280)">985计算机系</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl p-6 transition-all duration-150 hover:-translate-y-1"
+                        style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:6px 6px 0 var(--ink, #1E1B4B);opacity:0;transform:translateY(24px)">
+                        <div class="mb-3 flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-star size-5 fill-current" aria-hidden="true"
+                                style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg></div>
+                        <p class="mb-5 text-[15px] leading-[1.7]" style="color:var(--ink-soft, #4338CA)">
+                            “<!-- -->解析写得很细，四个选项逐个讲，专项练习太实用了，专门练我不会的题，提分很快。<!-- -->”</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex size-11 items-center justify-center rounded-full text-[15px] font-extrabold text-white"
+                                style="background:linear-gradient(135deg, var(--mango, #F59E0B) 0%, var(--peach, #F97316) 100%)">
+                                杰</div>
+                            <div>
+                                <div class="text-[15px] font-bold" >阿杰</div>
+                                <div class="text-[13px]" style="color:var(--ink-faint, #6B7280)">考研党</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl p-6 transition-all duration-150 hover:-translate-y-1"
+                        style="background:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:6px 6px 0 var(--ink, #1E1B4B);opacity:0;transform:translateY(24px)">
+                        <div class="mb-3 flex gap-0.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-star size-5 fill-current" aria-hidden="true"
+                                style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-star size-5 fill-current"
+                                aria-hidden="true" style="color:var(--mango, #F59E0B)">
+                                <path
+                                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                </path>
+                            </svg></div>
+                        <p class="mb-5 text-[15px] leading-[1.7]" style="color:var(--ink-soft, #4338CA)">
+                            “<!-- -->界面很年轻好看，做题像玩游戏升级一样，题库里还能刷别人分享的题，和室友一起刷，期末都过了！<!-- -->”</p>
+                        <div class="flex items-center gap-3">
+                            <div class="flex size-11 items-center justify-center rounded-full text-[15px] font-extrabold text-white"
+                                style="background:linear-gradient(135deg, var(--mint, #10B981) 0%, var(--grape, #4F46E5) 100%)">
+                                雨</div>
+                            <div>
+                                <div class="text-[15px] font-bold" >小雨</div>
+                                <div class="text-[13px]" style="color:var(--ink-faint, #6B7280)">英语专业</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="px-6 py-16 lg:px-8">
+            <div class="relative mx-auto flex max-w-[900px] flex-col items-center justify-between gap-6 overflow-hidden rounded-[28px] px-8 py-12 text-center md:flex-row md:gap-8 md:px-12 md:py-10 md:text-left"
+                style="background:var(--grape-deep, #4338CA);border:3px solid var(--ink, #1E1B4B);box-shadow:8px 8px 0 var(--ink, #1E1B4B);opacity:0;transform:translateY(24px)">
+                <div class="relative z-10 flex-1 min-w-0">
+                    <div class="mb-2 flex items-center gap-2 md:justify-start justify-center"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-flame size-6 text-white" aria-hidden="true">
+                            <path
+                                d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4">
+                            </path>
+                        </svg><span class="text-[14px] font-bold text-white/90">期末冲刺，现在就开始</span></div>
+                    <h2 class="text-balance text-[28px] font-black text-white md:text-[32px]">准备好稳过考试了吗？</h2>
+                    <p class="mt-2 text-[15px] text-white/80">完全免费，无需信用卡，登录立刻开始刷题</p>
+                </div><a class="relative z-10 shrink-0" href="dashboard.html"><button
+                        class="flex h-14 items-center gap-2 rounded-full px-8 text-[16px] font-bold transition-all duration-150 hover:-translate-y-1 active:translate-y-0"
+                        style="background:var(--white-surface, #fff); color:var(--grape-deep, #4338CA); box-shadow:0 4px 0 0 var(--ink, #1E1B4B)"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-trophy size-5" aria-hidden="true">
+                            <path d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978"></path>
+                            <path d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978"></path>
+                            <path d="M18 9h1.5a1 1 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z"></path>
+                            <path d="M6 9H4.5a1 1 0 0 1 0-5H6"></path>
+                        </svg>立即免费开始<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-arrow-right size-5" aria-hidden="true">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg></button></a>
+            </div>
+        </section>
+        <section class="px-6 pb-16 lg:px-8">
+            <div class="mx-auto flex max-w-[900px] flex-col items-center gap-6 rounded-[28px] px-8 py-10 text-center md:flex-row md:gap-10 md:px-12 md:py-9 md:text-left"
+                style="background-color:var(--paper, #FFFFFF);border:3px solid var(--ink, #1E1B4B);box-shadow:8px 8px 0 var(--ink, #1E1B4B);opacity:0;transform:translateY(24px)">
+                <div class="flex-1 min-w-0">
+                    <div class="mb-2 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[12px] font-black"
+                        style="background-color:var(--mint, #A7F3D0); border:2px solid var(--ink, #1E1B4B)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-smartphone size-3.5" aria-hidden="true">
+                            <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                            <path d="M12 18h.01"></path>
+                        </svg>微信小程序 · 正在赶来
+                    </div>
+                    <h2 class="text-balance text-[24px] font-black md:text-[28px]" >
+                        手机刷题，随时稳过</h2>
+                    <p class="mt-2 text-[15px] leading-relaxed" style="color:var(--ink-faint, #6B7280)">
+                        二进制书房微信小程序正在开发中，上线后在微信「搜一搜」搜索<span class="font-black"
+                            style="color:var(--grape-deep, #4338CA)">「二进制书房」</span>即可打开刷题。公测期推荐使用网页版，手机浏览器中选择「添加到主屏幕」，用起来和
+                        App 一样顺手。</p>
+                </div>
+                <div class="shrink-0">
+                    <div class="flex h-[132px] w-[132px] flex-col items-center justify-center gap-1 rounded-[20px]"
+                        style="border:3px dashed var(--ink-faint, #6B7280);background-color:var(--white-surface, #fff)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-qr-code size-9" aria-hidden="true"
+                            style="color:var(--ink-faint, #6B7280)">
+                            <rect width="5" height="5" x="3" y="3" rx="1"></rect>
+                            <rect width="5" height="5" x="16" y="3" rx="1"></rect>
+                            <rect width="5" height="5" x="3" y="16" rx="1"></rect>
+                            <path d="M21 16h-3a2 2 0 0 0-2 2v3"></path>
+                            <path d="M21 21v.01"></path>
+                            <path d="M12 7v3a2 2 0 0 1-2 2H7"></path>
+                            <path d="M3 12h.01"></path>
+                            <path d="M12 3h.01"></path>
+                            <path d="M12 16v.01"></path>
+                            <path d="M16 12h1"></path>
+                            <path d="M21 12v.01"></path>
+                            <path d="M12 21v-1"></path>
+                        </svg><span class="text-[12px] font-black"
+                            style="color:var(--ink-faint, #6B7280)">小程序码</span><span class="text-[11px] font-bold"
+                            style="color:var(--ink-faint, #6B7280)">即将上线</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="px-6 py-10 lg:px-8"
+            style="background-color:var(--paper, #FFFFFF);border-top:2px solid var(--line, #E5E7EB)">
+            <div class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-4 md:flex-row">
+                <div class="flex items-center gap-2">
+                    <div class="v41-mascot v41-mascot-xs" aria-hidden="true"></div><span class="text-[14px] font-bold"
+                        style="color:var(--ink-faint, #6B7280)">© 2026 二进制书房 · 大学生AI刷题社区</span>
+                </div>
+                <div class="flex items-center gap-6"><a href="#"
+                        class="text-[14px] font-bold transition-colors hover:text-[var(--grape)]"
+                        style="color:var(--ink-faint, #6B7280)">关于我们</a><a href="#"
+                        class="text-[14px] font-bold transition-colors hover:text-[var(--grape)]"
+                        style="color:var(--ink-faint, #6B7280)">使用帮助</a><a href="#"
+                        class="text-[14px] font-bold transition-colors hover:text-[var(--grape)]"
+                        style="color:var(--ink-faint, #6B7280)">隐私政策</a></div>
+            </div>
+        </footer>
+    </div><!--/$-->
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
