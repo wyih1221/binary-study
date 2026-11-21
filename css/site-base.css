@@ -184,3 +184,18 @@ button,.v41-btn-primary,.v41-tab-btn,.v41-ai-float-btn,.v41-mode-switch button{b
   /* 抽屉展开时隐藏三条横杆，避免压在抽屉品牌区上 */
   html.drawer-open [aria-label="打开菜单"]{opacity:0;pointer-events:none}
 }
+
+/* ============ 页面大标题统一 ============ */
+/* 桌面 30px / 移动 24px，字体、字重、行高、颜色全站一致 */
+.v41-page-title{
+  font-family:var(--font-cn) !important;
+  font-size:30px !important;
+  font-weight:800 !important;
+  line-height:1.3 !important;
+  letter-spacing:normal !important;
+  color:var(--ink) !important;
+  align-self:flex-start;
+}
+@media(max-width:767px){.v41-page-title{font-size:24px !important}}
+/* 标题距顶栏统一 32px（顶栏 64px）；全屏居中布局的页面不参与 */
+.v41-main>div:first-child:not(.min-h-screen){padding-top:32px}
