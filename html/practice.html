@@ -151,65 +151,56 @@
   </div>
 </header>
 <main class="v3-theme min-h-screen pt-16 md:ml-[260px] md:pt-0 v41-main" style="background-color: var(--color-bg);">
-        <div class="mx-auto flex max-w-5xl flex-col px-4 py-3 md:px-8 md:py-5 lg:h-[100dvh] lg:overflow-hidden">
-            <div style="opacity: 1; transform: none;">
-                <div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="lucide lucide-target size-5 text-[var(--grape)] md:size-6"
-                        aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <circle cx="12" cy="12" r="6"></circle>
-                        <circle cx="12" cy="12" r="2"></circle>
-                    </svg>
-                    <h1 class="text-xl font-bold text-ink md:text-[26px] v41-page-title">专项练习</h1>
-                </div>
-                <p class="mt-0.5 text-xs text-ink-soft md:text-sm">按知识点和题型组卷，针对性提升</p>
-            </div>
-            <div
-                class="mt-3 grid min-h-0 flex-1 grid-cols-1 gap-x-8 gap-y-3 lg:overflow-hidden lg:grid-cols-[1fr_320px] lg:gap-y-4">
-                <div class="flex min-h-0 flex-col space-y-3 overflow-y-auto lg:space-y-4 scroll-fade-y">
-                    <div style="opacity: 1; transform: none;">
-                        <div class="flex items-center gap-2"><span
-                                class="flex size-6 items-center justify-center rounded-full border-2 border-[var(--ink)] text-[11px] font-bold text-white shadow-[2px_2px_0_var(--ink)] v41-btn-grape"
-                               >1</span>
-                            <h2 class="text-[15px] font-semibold text-ink">选择题库</h2>
-                        </div>
-                        <div class="mt-2.5">
-                            <div
-                                class="rounded-[var(--r-lg)] border-2 border-[var(--line)] bg-paper p-4 shadow-[4px_4px_0_var(--grape-soft)]">
-                                <div class="flex items-start gap-3"><span
-                                        class="flex size-8 shrink-0 items-center justify-center rounded-lg bg-[var(--grape-soft)] text-[var(--grape)]"><svg
-                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-library size-4" aria-hidden="true">
-                                            <path d="m16 6 4 14"></path>
-                                            <path d="M12 6v14"></path>
-                                            <path d="M8 8v12"></path>
-                                            <path d="M4 4v16"></path>
-                                        </svg></span>
-                                    <div class="min-w-0 flex-1">
-                                        <p class="text-sm font-bold text-ink">还没有自己的题库</p>
-                                        <p class="mt-0.5 text-xs leading-relaxed text-ink-soft">可以先做官方真题练手，再按薄弱点专项突破</p>
-                                        <div class="mt-2.5 flex flex-wrap items-center gap-2"><a
-                                                class="inline-flex h-8 shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-full border-2 border-[var(--ink,#1E1B4B)] bg-primary px-3 text-[0.8rem] font-semibold text-white shadow-[2px_2px_0_var(--ink)] outline-none select-none transition-all hover:bg-primary/90 hover:-translate-y-0.5 focus-visible:border-ring focus-visible:ring-4 focus-visible:ring-ring/15 active:translate-y-0 active:shadow-[1px_1px_0_var(--ink)] v41-btn-grape"
-                                                href="library.html">做官方真题<svg
-                                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                    class="lucide lucide-chevron-right size-3.5" aria-hidden="true">
-                                                    <path d="m9 18 6-6-6-6"></path>
-                                                </svg></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="mx-auto max-w-6xl px-4 py-3 md:px-8 md:py-5">
+            <div class="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                    <div class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" style="color: var(--grape);" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                        <h1 class="v41-page-title">专项练习</h1>
                     </div>
+                    <p class="mt-1 text-xs text-ink-soft md:text-sm">按科目专项突破，选中即判分，答错自动进错题本</p>
                 </div>
+                <a class="v41-btn-grape inline-flex items-center gap-1.5 px-4 py-2 text-[13px] font-bold" href="mistakes.html">看我积累的错题 →</a>
+            </div>
+
+            <div class="v3-chips mt-3" id="pracSubjects"></div>
+
+            <div class="bh-prac mt-4">
+                <section class="bh-q-card">
+                    <div class="bh-q-top">
+                        <span class="bh-q-idx" id="pracIdx"></span>
+                        <span class="bh-q-tag" id="pracType"></span>
+                        <span class="bh-q-tag" id="pracLevel"></span>
+                        <span class="bh-q-sub" id="pracSub"></span>
+                        <button type="button" class="bh-q-fav" id="pracFav" aria-label="收藏本题">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 17.3 6.2 21l1.6-6.6L2.5 9.6l6.8-.6L12 2.7l2.7 6.3 6.8.6-5.3 4.8L17.8 21z"></path></svg>
+                        </button>
+                    </div>
+                    <p class="bh-q-stem" id="pracStem"></p>
+                    <div class="bh-q-opts" id="pracOpts"></div>
+                    <div class="bh-q-ana" id="pracAna" hidden></div>
+                    <div class="bh-q-foot">
+                        <button type="button" class="bh-btn bh-btn-ghost" id="pracPrev">← 上一题</button>
+                        <button type="button" class="bh-btn bh-btn-ghost" id="pracAi">AI 讲讲这道题</button>
+                        <button type="button" class="bh-btn bh-btn-grape" id="pracNext">下一题 →</button>
+                    </div>
+                </section>
+
+                <aside class="bh-q-side">
+                    <div class="bh-side-card">
+                        <div class="bh-side-head">答题卡</div>
+                        <div class="bh-side-grid" id="pracGrid"></div>
+                        <div class="bh-side-stat" id="pracStat"></div>
+                        <button type="button" class="bh-btn bh-btn-grape bh-btn-block" id="pracSubmit">交卷看结果</button>
+                    </div>
+                </aside>
             </div>
         </div>
     </main>
     
+    <script src="../js/data.js"></script>
+<script src="../js/core.js"></script>
+<script src="../js/features.js"></script>
     <script src="../js/app.js">
 
     </script>

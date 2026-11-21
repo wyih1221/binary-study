@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>登录 - 二进制书房</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 二进制书房</title>
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <link rel="stylesheet" href="../css/fredoka.css">
+    <link rel="stylesheet" href="../css/site-base.css">
+    <script>
+        (function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();
+    </script>
 </head>
-<body>
+
+<body class="font-sans antialiased">
+    <main class="bh-auth v3-theme">
+        <div class="bh-auth-card">
+            <div class="bh-auth-brand"><span class="v41-brand-logo" aria-hidden="true"></span>
+                <span>二进制书房</span>
+            </div>
+            <h1 class="bh-auth-title">登录</h1>
+            <p class="bh-auth-sub">登录后继续你的学习进度</p>
+
+            <div class="bh-field"><label>邮箱或用户名</label>
+                <input class="bh-input" id="authId" placeholder="miyan@example.com" autocomplete="username">
+            </div>
+            
+            <div class="bh-field"><label>密码</label>
+                <input class="bh-input" id="authPwd" type="password" placeholder="至少 6 位" autocomplete="current-password">
+            </div>
+            
+            <p class="bh-auth-err" id="authErr" hidden></p>
+            <button class="bh-btn bh-btn-grape bh-btn-block" id="authSubmit" type="button">登录</button>
+            <div class="bh-auth-foot"><a href="forgot-password.html">忘记密码</a><span>·</span><a href="register.html">还没有账号？去注册</a></div>
+        </div>
+        <button class="bh-auth-theme" type="button" aria-label="切换主题">跟随系统切换明暗</button>
+    </main>
+    <script src="../js/core.js"></script>
+    <script src="../js/features.js"></script>
 </body>
+
 </html>
