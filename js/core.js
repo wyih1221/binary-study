@@ -162,11 +162,11 @@
       ['错题本', 'mistakes.html', '错题回看与重做'],
       ['做题记录', 'records.html', '答题历史与统计'],
       ['班级', 'classes.html', '创建班级、加入班级'],
-      ['我的日历', 'calendar.html', '学习日程'],
-      ['我的课程表', 'schedule.html', '课程与学期'],
+      ['日历', 'calendar.html', '学习日程'],
+      ['课程表', 'schedule.html', '课程与学期'],
       ['番茄钟', 'focus.html', '专注计时'],
       ['稳过签', 'fortune.html', '考前求签'],
-      ['我的手账', 'diary.html', '学习日记'],
+      ['手账', 'diary.html', '学习日记'],
       ['设置', 'settings.html', '资料与偏好']
     ].map(function (p) {
       return { type: '页面', title: p[0], meta: p[2], href: p[1] };
