@@ -370,7 +370,7 @@
     var origRow = row ? row.innerHTML : '';
     var tabs = $$('button', tabWrap);
     var tabNames = tabs.map(function (b) { return b.textContent.trim(); });
-    var active = '公开广场';
+    var active = '官方题库';
     var subject = '全部';
     var kw = '';
 
@@ -399,7 +399,7 @@
 
     function renderRow() {
       if (!row) return;
-      if (active !== '公开广场') { row.innerHTML = origRow; return; }
+      if (active !== '官方题库') { row.innerHTML = origRow; return; }
       var subs = ['全部'].concat(QS.map(function (q) { return q.subject; })
         .filter(function (v, i, a) { return a.indexOf(v) === i; }));
       row.innerHTML = '<div class="bh-chips">' + subs.map(function (s) {
@@ -419,16 +419,15 @@
     function render() {
       stats();
       if (secHead) {
-        secHead.innerHTML = active === '公开广场'
+        secHead.innerHTML = active === '官方题库'
           ? '官方真题 <span class="ml-1.5 text-xs font-normal text-[var(--ink-faint)]">2009–2010 · 共 ' + QS.length + ' 题</span>'
-          : '<span>' + active + '</span> <span class="ml-1.5 text-xs font-normal text-[var(--ink-faint)]">来源：我上传的</span>';
+          : '我的题库 <span class="ml-1.5 text-xs font-normal text-[var(--ink-faint)]">来源：我上传的</span>';
       }
-      if (active !== '公开广场') {
+      if (active !== '官方题库') {
         listBox.className = 'flex flex-col items-center justify-center py-20';
-        listBox.innerHTML = '<div class="bh-empty" style="padding:0"><b>' +
-          (active === '我的题库' ? '还没有自己的题库' : '同校题库还没有内容') + '</b>' +
-          (active === '我的题库' ? '可以先做官方真题练手，再按章节专项突破' : '去公开广场看看内置真题') +
-          '<br><br><a class="bh-mis-act is-main" href="practice.html">去做官方真题</a></div>';
+        listBox.innerHTML = '<div class="bh-empty" style="padding:0"><b>还没有自己的题库</b>' +
+          '可以先做官方真题练手，再按章节专项突破<br><br>' +
+          '<a class="bh-mis-act is-main" href="practice.html">去做官方真题</a></div>';
         return;
       }
       var shown = QS.filter(function (q) {
