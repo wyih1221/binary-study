@@ -180,5 +180,7 @@ button,.v41-btn-primary,.v41-tab-btn,.v41-ai-float-btn,.v41-mode-switch button{b
   .v41-tb-kbd,.v41-tb-streak{display:none}
   /* 折叠菜单按钮并入顶栏：去掉贴纸底与投影，只留图标 */
   [aria-label="打开菜单"]{top:12px !important;left:14px !important;background:transparent !important;
-    box-shadow:none !important;border-radius:10px}
+    box-shadow:none !important;border-radius:10px;transition:opacity .16s ease}
+  /* 抽屉展开时隐藏三条横杆，避免压在抽屉品牌区上 */
+  html.drawer-open [aria-label="打开菜单"]{opacity:0;pointer-events:none}
 }
