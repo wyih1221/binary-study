@@ -174,62 +174,71 @@
     return items.concat(pages);
   }
 
-  function openSearch(initial) {
-    var wrap = document.createElement('div');
-    wrap.className = 'bh-search-wrap';
-    wrap.innerHTML =
-      '<div class="bh-search-field">' +
-      '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg>' +
-      '<input class="bh-search-input" type="text" placeholder="搜索题目、章节或页面…" autocomplete="off">' +
-      '<kbd class="bh-search-kbd">Esc</kbd></div>' +
-      '<div class="bh-search-list" role="listbox"></div>';
-    var m = modal({ title: '搜索', body: wrap, actions: false, wide: true });
-    var input = wrap.querySelector('.bh-search-input');
-    var list = wrap.querySelector('.bh-search-list');
+  // 顶栏内联搜索：输入即在下方展开候选，不再弹窗
+  function initInlineSearch(bar) {
+    var box = bar.querySelector('.v41-tb-search');
+    if (!box) return;
+    var input = box.querySelector('.v41-tb-input');
+    if (!input) return;
+
     var idx = searchIndex();
-    var active = 0;
-    var shown = [];
+    var panel = document.createElement('div');
+    panel.className = 'bh-suggest';
+    box.appendChild(panel);
+
+    var shown = [], active = 0;
+
+    function close() {
+      panel.classList.remove('is-on');
+    }
 
     function render() {
       var kw = input.value.trim().toLowerCase();
+      if (!kw) { close(); return; }
       shown = idx.filter(function (it) {
-        if (!kw) return it.type === '页面';
         return (it.title + ' ' + it.meta).toLowerCase().indexOf(kw) >= 0;
-      }).slice(0, 12);
+      }).slice(0, 8);
+      active = Math.min(active, Math.max(0, shown.length - 1));
       if (!shown.length) {
-        list.innerHTML = '<p class="bh-search-empty">没有匹配的结果</p>';
+        panel.innerHTML = '<p class="bh-suggest-empty">没有匹配的结果</p>';
+        panel.classList.add('is-on');
         return;
       }
-      active = Math.min(active, shown.length - 1);
-      list.innerHTML = shown.map(function (it, i) {
-        return '<a class="bh-search-item' + (i === active ? ' is-active' : '') + '" href="' + it.href + '">' +
-          '<span class="bh-search-badge">' + it.type + '</span>' +
-          '<span class="bh-search-main"><b>' + esc(it.title) + '</b><em>' + esc(it.meta) + '</em></span></a>';
+      panel.innerHTML = shown.map(function (it, i) {
+        return '<a class="bh-suggest-item' + (i === active ? ' is-active' : '') + '" href="' + it.href + '">' +
+          '<span class="bh-suggest-badge">' + it.type + '</span>' +
+          '<span class="bh-suggest-main"><b>' + esc(it.title) + '</b><em>' + esc(it.meta) + '</em></span></a>';
       }).join('');
+      panel.classList.add('is-on');
     }
 
     function go(i) {
       var it = shown[i];
-      if (!it) return;
-      location.href = it.href;
+      if (it) location.href = it.href;
     }
 
     input.addEventListener('input', function () { active = 0; render(); });
+    input.addEventListener('focus', render);
     input.addEventListener('keydown', function (e) {
       if (e.key === 'ArrowDown') { e.preventDefault(); active = Math.min(active + 1, shown.length - 1); render(); }
       else if (e.key === 'ArrowUp') { e.preventDefault(); active = Math.max(active - 1, 0); render(); }
       else if (e.key === 'Enter') { e.preventDefault(); go(active); }
+      else if (e.key === 'Escape') { input.value = ''; input.blur(); close(); }
     });
-    list.addEventListener('click', function (e) {
+    panel.addEventListener('mousedown', function (e) {
       var a = e.target.closest('a');
-      if (a) e.preventDefault();
-      if (a) location.href = a.getAttribute('href');
+      if (a) { e.preventDefault(); location.href = a.getAttribute('href'); }
     });
+    document.addEventListener('click', function (e) {
+      if (!box.contains(e.target)) close();
+    });
+    input._bhSearch = { focus: function () { input.focus(); input.select(); } };
+  }
 
-    render();
-    if (initial) { input.value = initial; render(); }
-    setTimeout(function () { input.focus(); }, 50);
-    return m;
+  // 兼容旧调用：聚焦顶栏输入
+  function openSearch() {
+    var input = document.querySelector('.v41-tb-input');
+    if (input) { input.focus(); input.select(); return; }
   }
 
   function esc(s) {
@@ -243,13 +252,7 @@
     var bar = document.getElementById('appTopbar');
     if (!bar) return;
 
-    var s = bar.querySelector('.v41-tb-search');
-    if (s) {
-      s.addEventListener('click', function (e) {
-        e.preventDefault();
-        openSearch();
-      });
-    }
+    initInlineSearch(bar);
 
     var bell = bar.querySelector('.v41-tb-bell');
     if (bell) {
