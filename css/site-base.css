@@ -8848,6 +8848,7 @@ html.dark .bh-lib-stats .v3-stat:hover{
 .bh-q-card,
 .bh-side-card{
   border-color:transparent !important;
+  background-origin:border-box !important;
   box-shadow:0 10px 30px -12px rgba(16,24,40,.20) !important;
 }
 .v3-stat:hover,
@@ -8871,4 +8872,10 @@ html.dark .v3-card:hover,
 html.dark .bh-q-card:hover,
 html.dark .bh-side-card:hover{
   box-shadow:0 16px 36px -14px rgba(0,0,0,.7) !important;
+}
+
+/* 渐变底卡片：透明边区域也要被渐变覆盖，避免出现一条杂色边 */
+[style*="linear-gradient"][style*="border: 2px solid transparent"]{
+  background-origin:border-box !important;
+  background-clip:border-box !important;
 }
