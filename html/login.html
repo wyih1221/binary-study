@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/fredoka.css">
     <link rel="stylesheet" href="../css/site-base.css">
     <script>
-        (function(){try{var m=localStorage.getItem("wenguo-theme-mode"),d;if(m==="dark")d=true;else if(m==="light")d=false;else if(m==="system")d=window.matchMedia("(prefers-color-scheme: dark)").matches;else d=localStorage.getItem("wenguo-theme")==="dark";if(d)document.documentElement.classList.add("dark");}catch(e){}})();
+        (function(){try{var m=localStorage.getItem("wenguo-theme-mode"),d=false;if(m==="dark")d=true;else if(m==="system")d=window.matchMedia("(prefers-color-scheme: dark)").matches;if(d)document.documentElement.classList.add("dark");}catch(e){}})();
     </script>
 </head>
 

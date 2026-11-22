@@ -70,7 +70,10 @@
 
   function toggleTheme() {
     var dark = document.documentElement.classList.toggle('dark');
-    try { localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light'); } catch (e) { }
+    try {
+      localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light');
+      localStorage.setItem('wenguo-theme-mode', dark ? 'dark' : 'light');
+    } catch (e) { }
     syncFavicon();
   }
 

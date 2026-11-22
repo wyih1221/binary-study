@@ -7145,24 +7145,24 @@ html.sprint {
 .v41-sidebar-group+.v41-sidebar-group::before {
   content: "";
   display: block;
-  width: 56%;
-  margin: 14px auto 12px;
+  width: 100%;
+  margin: 14px 0 12px;
   border-top: 2px dashed var(--line-strong);
   opacity: .9;
 }
 
 @media (min-width:768px) {
   body>aside.v41-rail .v41-sidebar-group+.v41-sidebar-group::before {
-    width: 44px;
-    margin-left: auto;
-    margin-right: auto;
+    width: calc(100% + 12px);
+    margin-left: -6px;
+    margin-right: -6px;
     transition: width .36s ease-out, margin .36s ease-out;
   }
 
   html.rail-open body>aside.v41-rail .v41-sidebar-group+.v41-sidebar-group::before {
-    width: 56%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
