@@ -8843,8 +8843,6 @@ html.dark .bh-lib-stats .v3-stat:hover{
 [style*="var(--paper)"][style*="solid var(--line)"],
 .v3-card,
 .v3-stat,
-.bh-lib-item,
-.bh-mis-item,
 .bh-q-card,
 .bh-side-card{
   border-color:transparent !important;
@@ -8852,26 +8850,30 @@ html.dark .bh-lib-stats .v3-stat:hover{
   box-shadow:0 10px 30px -12px rgba(16,24,40,.20) !important;
 }
 .v3-stat:hover,
-.v3-card:hover,
 .bh-q-card:hover,
 .bh-side-card:hover{
   box-shadow:0 16px 36px -14px rgba(16,24,40,.24) !important;
+}
+.v3-card:hover{
+  transform:none !important;
+  box-shadow:0 10px 30px -12px rgba(16,24,40,.20) !important;
 }
 html.dark [style*="var(--card)"][style*="solid var(--line)"],
 html.dark [style*="var(--paper)"][style*="solid var(--line)"],
 html.dark .v3-card,
 html.dark .v3-stat,
-html.dark .bh-lib-item,
-html.dark .bh-mis-item,
 html.dark .bh-q-card,
 html.dark .bh-side-card{
   box-shadow:0 10px 30px -12px rgba(0,0,0,.62) !important;
 }
 html.dark .v3-stat:hover,
-html.dark .v3-card:hover,
 html.dark .bh-q-card:hover,
 html.dark .bh-side-card:hover{
   box-shadow:0 16px 36px -14px rgba(0,0,0,.7) !important;
+}
+html.dark .v3-card:hover{
+  transform:none !important;
+  box-shadow:0 10px 30px -12px rgba(0,0,0,.62) !important;
 }
 
 /* 渐变底卡片：透明边区域也要被渐变覆盖，避免出现一条杂色边 */
@@ -8882,4 +8884,16 @@ html.dark .bh-side-card:hover{
 /* 透明边框的卡片：背景必须铺到边框区，否则会露出一圈页面底色（看起来像灰边） */
 [style*="solid transparent"][style*="background"]{
   background-clip:border-box !important;
+}
+
+/* 列表型卡片（题库/错题本行）：间距近，投影要更轻 */
+.bh-lib-item,
+.bh-mis-item{
+  border-color:transparent !important;
+  box-shadow:0 2px 8px -4px rgba(16,24,40,.10) !important;
+  background-origin:border-box !important;
+}
+html.dark .bh-lib-item,
+html.dark .bh-mis-item{
+  box-shadow:0 2px 8px -4px rgba(0,0,0,.5) !important;
 }

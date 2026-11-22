@@ -165,7 +165,7 @@
       ['日历', 'calendar.html', '学习日程'],
       ['课程表', 'schedule.html', '课程与学期'],
       ['番茄钟', 'focus.html', '专注计时'],
-      ['稳过签', 'fortune.html', '考前求签'],
+      ['抽签', 'fortune.html', '考前求签'],
       ['手账', 'diary.html', '学习日记'],
       ['设置', 'settings.html', '资料与偏好']
     ].map(function (p) {
