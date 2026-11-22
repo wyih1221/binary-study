@@ -8838,27 +8838,37 @@ html.dark .bh-lib-stats .v3-stat:hover{
   box-shadow:0 10px 22px -6px rgba(0,0,0,.55), 0 2px 6px -2px rgba(0,0,0,.35);
 }
 
-/* ============ 卡片统一：去描边 + 柔和双层投影（方案 A） ============ */
-[style*="var(--card)"][style*="2px solid var(--line)"],
+/* ============ 卡片统一：去描边 + 纯扩散投影（无贴边亮/暗环） ============ */
+[style*="var(--card)"][style*="solid var(--line)"],
+[style*="var(--paper)"][style*="solid var(--line)"],
 .v3-card,
 .v3-stat,
 .bh-lib-item,
 .bh-mis-item,
-[style*="var(--paper)"][style*="2px solid var(--line)"]{
+.bh-q-card,
+.bh-side-card{
   border-color:transparent !important;
-  box-shadow:0 1px 2px rgba(16,24,40,.04), 0 12px 28px -16px rgba(16,24,40,.18) !important;
+  box-shadow:0 10px 30px -12px rgba(16,24,40,.20) !important;
 }
 .v3-stat:hover,
-.v3-card:hover{
-  box-shadow:0 2px 4px rgba(16,24,40,.05), 0 16px 32px -18px rgba(16,24,40,.22) !important;
+.v3-card:hover,
+.bh-q-card:hover,
+.bh-side-card:hover{
+  box-shadow:0 16px 36px -14px rgba(16,24,40,.24) !important;
 }
-html.dark [style*="var(--card)"][style*="2px solid var(--line)"],
+html.dark [style*="var(--card)"][style*="solid var(--line)"],
+html.dark [style*="var(--paper)"][style*="solid var(--line)"],
 html.dark .v3-card,
 html.dark .v3-stat,
-html.dark [style*="var(--paper)"][style*="2px solid var(--line)"]{
-  box-shadow:0 1px 2px rgba(0,0,0,.35), 0 12px 28px -16px rgba(0,0,0,.55) !important;
+html.dark .bh-lib-item,
+html.dark .bh-mis-item,
+html.dark .bh-q-card,
+html.dark .bh-side-card{
+  box-shadow:0 10px 30px -12px rgba(0,0,0,.62) !important;
 }
 html.dark .v3-stat:hover,
-html.dark .v3-card:hover{
-  box-shadow:0 2px 4px rgba(0,0,0,.4), 0 16px 32px -18px rgba(0,0,0,.6) !important;
+html.dark .v3-card:hover,
+html.dark .bh-q-card:hover,
+html.dark .bh-side-card:hover{
+  box-shadow:0 16px 36px -14px rgba(0,0,0,.7) !important;
 }
