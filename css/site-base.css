@@ -8906,3 +8906,19 @@ html.dark .bh-mis-item{
 .bh-theme-card[aria-pressed="true"] .bh-theme-ico{background-color:var(--grape)!important;color:#fff!important}
 .bh-theme-card[aria-pressed="true"] .bh-theme-name{color:var(--grape-deep)!important}
 .bh-theme-card[aria-pressed="true"] .bh-theme-check{display:flex}
+/* 统计卡右上角光晕：跟随卡片圆角，避免方角戳出白边 */
+.v3-stat::after{border-radius:inherit !important}
+
+/* 抽签页输入框：阴影比普通卡片更轻 */
+.v41-main div.bh-fortune-input{box-shadow:0 4px 12px -8px rgba(16,24,40,.14) !important}
+html.dark .v41-main div.bh-fortune-input{box-shadow:0 4px 12px -8px rgba(0,0,0,.45) !important}
+
+/* 滚动容器内的卡片：投影收小，避免被滚动区域裁掉一半显出硬边 */
+.overflow-y-auto > [style*="var(--card)"],
+.overflow-y-auto > [style*="var(--paper)"]{
+  box-shadow:0 2px 8px -4px rgba(16,24,40,.10) !important;
+}
+html.dark .overflow-y-auto > [style*="var(--card)"],
+html.dark .overflow-y-auto > [style*="var(--paper)"]{
+  box-shadow:0 2px 8px -4px rgba(0,0,0,.5) !important;
+}
