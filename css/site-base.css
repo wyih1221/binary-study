@@ -8822,3 +8822,14 @@ html.dark .bh-btn-ghost{background:linear-gradient(140deg,#2b2b4c 0%,#232340 100
   box-shadow:0 8px 20px rgba(61,91,216,.45) !important}
 .bh-btn-grape:active{transform:translateY(0);box-shadow:0 2px 6px rgba(61,91,216,.34) !important}
 .bh-btn-grape:disabled{opacity:.5;transform:none;filter:grayscale(.25);box-shadow:0 4px 12px rgba(61,91,216,.25) !important}
+
+/* 题库页统计卡：hover 换成淡蓝（图标底色同款） */
+.bh-lib-stats .v3-stat{transition:transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease}
+.bh-lib-stats .v3-stat:hover{
+  transform:translate(-3px,-3px);
+  background:var(--grape-soft);
+  border-color:var(--grape-soft2);
+  box-shadow:6px 6px 0 var(--grape-soft2);
+}
+.bh-lib-stats .v3-stat:hover .v3-stat-label{color:var(--grape-deep)}
+html.dark .bh-lib-stats .v3-stat:hover{background:#2a2a4d;border-color:#3b3b68;box-shadow:6px 6px 0 #33335c}

@@ -385,15 +385,19 @@
 
     function stats() {
       var ans = S.get('answers', {});
-      var done = Object.keys(ans).length;
+      var done = Object.keys(ans).filter(function (k) { return QS.some(function (q) { return q.id === k; }); }).length;
       var ok = Object.keys(ans).filter(function (k) { return ans[k].ok; }).length;
+      var wrong = S.get('wrong', []).filter(function (w) { return QS.some(function (q) { return q.id === w.id; }); }).length;
+      var map = {
+        '题目总数': QS.length + '<em>题</em>',
+        '已练题目': done + '<em>题</em>',
+        '正确率': (done ? Math.round(ok / done * 100) + '<em>%</em>' : '—'),
+        '待复习错题': wrong + '<em>道</em>'
+      };
       $$('.v3-stat', main).forEach(function (st) {
         var lab = st.querySelector('.v3-stat-label');
         var val = st.querySelector('.v3-stat-val');
-        if (!lab || !val) return;
-        var name = lab.textContent.trim();
-        if (name === '已解析题目') val.innerHTML = QS.length + '<em>题</em>';
-        else if (name === '平均正确率') val.innerHTML = done ? Math.round(ok / done * 100) + '<em>%</em>' : '—';
+        if (lab && val && map[lab.textContent.trim()]) val.innerHTML = map[lab.textContent.trim()];
       });
     }
 
