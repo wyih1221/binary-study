@@ -471,10 +471,14 @@
 
     var mins = 25, left = 25 * 60, timer = null, running = false;
 
+    // 按钮外层容器里有一层 absolute inset-0 的紫色装饰底，撑高后会把整块染紫，先关掉
+    var glow = startBtn.parentNode.querySelector(':scope > div.absolute');
+    if (glow) glow.style.display = 'none';
+
     var bar = document.createElement('div');
     bar.className = 'bh-timer';
     bar.innerHTML = '<div class="bh-timer-num">25:00</div><div class="bh-timer-hint">选择时长后点开始，专注期间自动屏蔽打扰</div>';
-    startBtn.parentNode.insertBefore(bar, startBtn);
+    startBtn.parentNode.parentNode.insertBefore(bar, startBtn.parentNode);
     var num = bar.querySelector('.bh-timer-num');
 
     function paint() {
