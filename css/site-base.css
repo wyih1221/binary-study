@@ -8775,3 +8775,26 @@ button.is-picked {
     max-height: 64vh
   }
 }
+
+/* 次要按钮：白灰黏土质感（与主按钮同一套语言，取白灰配色） */
+.v41-btn-clay-ghost{
+  background:linear-gradient(140deg,var(--paper) 0%,var(--cream-deep) 100%);
+  border:0 !important;
+  border-radius:9999px !important;
+  color:var(--ink-soft);
+  box-shadow:0 3px 10px rgba(60,70,120,.16);
+  transition:transform .15s ease, box-shadow .15s ease, filter .15s ease, color .15s ease;
+}
+.v41-btn-clay-ghost:hover{
+  transform:translateY(-2px);
+  filter:brightness(1.03);
+  color:var(--grape-deep);
+  box-shadow:0 8px 18px rgba(60,70,120,.2);
+}
+.v41-btn-clay-ghost:active{
+  transform:translateY(0);
+  box-shadow:0 2px 6px rgba(60,70,120,.14);
+}
+html.dark .v41-btn-clay-ghost{box-shadow:0 3px 10px rgba(0,0,0,.4);color:#c7cbff}
+html.dark .v41-btn-clay-ghost:hover{box-shadow:0 8px 18px rgba(0,0,0,.45);color:#c7cbff}
+html.dark .v41-btn-clay-ghost:active{box-shadow:0 2px 6px rgba(0,0,0,.35)}
