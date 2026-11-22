@@ -8823,13 +8823,19 @@ html.dark .bh-btn-ghost{background:linear-gradient(140deg,#2b2b4c 0%,#232340 100
 .bh-btn-grape:active{transform:translateY(0);box-shadow:0 2px 6px rgba(61,91,216,.34) !important}
 .bh-btn-grape:disabled{opacity:.5;transform:none;filter:grayscale(.25);box-shadow:0 4px 12px rgba(61,91,216,.25) !important}
 
-/* 题库页统计卡：hover 只换投影色，且与各自图标底色对应 */
-.bh-lib-stats .v3-stat{--bh-hov:var(--grape-soft);transition:transform .18s ease, box-shadow .18s ease}
-.bh-lib-stats .v3-stat:nth-child(2){--bh-hov:var(--mint-soft)}
-.bh-lib-stats .v3-stat:nth-child(3){--bh-hov:var(--peach-soft)}
-.bh-lib-stats .v3-stat:nth-child(4){--bh-hov:var(--mango-soft)}
-.bh-lib-stats .v3-stat:hover{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--bh-hov)}
-html.dark .bh-lib-stats .v3-stat{--bh-hov:rgba(129,140,248,.30)}
-html.dark .bh-lib-stats .v3-stat:nth-child(2){--bh-hov:rgba(52,211,153,.30)}
-html.dark .bh-lib-stats .v3-stat:nth-child(3){--bh-hov:rgba(251,146,60,.32)}
-html.dark .bh-lib-stats .v3-stat:nth-child(4){--bh-hov:rgba(251,191,36,.30)}
+/* 题库页统计卡：常规柔和投影（同明度色相，悬停轻抬 3px） */
+.bh-lib-stats .v3-stat{
+  --bh-rgb:79,70,229;
+  transition:transform .2s ease, box-shadow .2s ease;
+  will-change:transform;
+}
+.bh-lib-stats .v3-stat:nth-child(2){--bh-rgb:5,150,105}
+.bh-lib-stats .v3-stat:nth-child(3){--bh-rgb:234,88,12}
+.bh-lib-stats .v3-stat:nth-child(4){--bh-rgb:217,119,6}
+.bh-lib-stats .v3-stat:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 28px -12px rgba(var(--bh-rgb),.36), 0 5px 12px -6px rgba(var(--bh-rgb),.26);
+}
+html.dark .bh-lib-stats .v3-stat:hover{
+  box-shadow:0 14px 30px -12px rgba(var(--bh-rgb),.6), 0 5px 12px -6px rgba(0,0,0,.35);
+}
