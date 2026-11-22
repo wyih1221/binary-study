@@ -157,57 +157,28 @@
                     </svg>去做题</a>
             </div>
             <div class="mt-6 grid grid-cols-3 gap-4 bh-rec-stats" style="opacity: 1; transform: none;">
-                <div class="flex items-center gap-3 rounded-2xl p-4"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft);">
-                    <div class="flex size-10 items-center justify-center rounded-xl"
-                        style="background-color: var(--grape-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open size-5"
-                            aria-hidden="true" style="color: var(--grape-deep);">
-                            <path d="M12 7v14"></path>
-                            <path
-                                d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
-                            </path>
-                        </svg></div>
-                    <div class="min-w-0 flex-1">
-                        <div class="text-[22px] font-extrabold leading-none" style="color: var(--ink);">0题</div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">累计做题</div>
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-grape-soft text-grape-deep"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open size-5" aria-hidden="true"> <path d="M12 7v14"></path> <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"> </path> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">累计做题</div>
+                            <div class="v3-stat-val tabular-nums">0<em>题</em></div>
+                        </div>
+                    </div>
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-mint-soft text-mint"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target size-5" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <circle cx="12" cy="12" r="6"></circle> <circle cx="12" cy="12" r="2"></circle> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">平均正确率</div>
+                            <div class="v3-stat-val tabular-nums">0<em>%</em></div>
+                        </div>
+                    </div>
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-peach-soft text-peach-deep"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert size-5" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <line x1="12" x2="12" y1="8" y2="12"></line> <line x1="12" x2="12.01" y1="16" y2="16"></line> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">待复习错题</div>
+                            <div class="v3-stat-val tabular-nums">0<em>题</em></div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex items-center gap-3 rounded-2xl p-4"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft);">
-                    <div class="flex size-10 items-center justify-center rounded-xl"
-                        style="background-color: var(--mint-soft, #e8f7ef);"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-target size-5" aria-hidden="true"
-                            style="color: var(--mint-deep, #2d8a5f);">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg></div>
-                    <div class="min-w-0 flex-1">
-                        <div class="text-[22px] font-extrabold leading-none" style="color: var(--ink);">0%</div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">平均正确率</div>
-                    </div>
-                </div>
-                <div class="flex items-center gap-3 rounded-2xl p-4"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft);">
-                    <div class="flex size-10 items-center justify-center rounded-xl"
-                        style="background-color: var(--peach-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert size-5"
-                            aria-hidden="true" style="color: var(--peach-deep);">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="12" x2="12" y1="8" y2="12"></line>
-                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                        </svg></div>
-                    <div class="min-w-0 flex-1">
-                        <div class="text-[22px] font-extrabold leading-none" style="color: var(--ink);">0题</div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">待复习错题</div>
-                    </div>
-                </div>
-            </div>
             <div class="mt-8" style="opacity: 1; transform: none;">
                 <div class="mb-3 flex items-center justify-between">
                     <h2 class="text-[16px] font-extrabold" style="color: var(--ink); font-family: var(--font-cn);">📝

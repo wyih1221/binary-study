@@ -8906,8 +8906,8 @@ html.dark .bh-mis-item{
 .bh-theme-card[aria-pressed="true"] .bh-theme-ico{background-color:var(--grape)!important;color:#fff!important}
 .bh-theme-card[aria-pressed="true"] .bh-theme-name{color:var(--grape-deep)!important}
 .bh-theme-card[aria-pressed="true"] .bh-theme-check{display:flex}
-/* 统计卡右上角光晕：跟随卡片圆角，避免方角戳出白边 */
-.v3-stat::after{border-radius:inherit !important}
+/* 统计卡右上角装饰光晕：会形成一条白边，直接关掉 */
+.v3-stat::after{display:none !important}
 
 /* 抽签页输入框：阴影比普通卡片更轻 */
 .v41-main div.bh-fortune-input{box-shadow:0 4px 12px -8px rgba(16,24,40,.14) !important}

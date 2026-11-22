@@ -191,92 +191,35 @@
                 </div>
             </div>
             <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4 bh-dash-stats" style="opacity: 1; transform: none;">
-                <div class="flex h-full flex-row items-center gap-3 rounded-2xl p-4 transition-all"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft); opacity: 1; transform: none;">
-                    <div class="flex items-center justify-between">
-                        <div class="flex size-10 items-center justify-center rounded-xl"
-                            style="background-color: var(--grape-soft);"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-book-open size-5" aria-hidden="true"
-                                style="color: var(--grape-deep);">
-                                <path d="M12 7v14"></path>
-                                <path
-                                    d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
-                                </path>
-                            </svg></div>
-                    </div>
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="text-[24px] font-extrabold leading-none tabular-nums" style="color: var(--ink);">0题
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-grape-soft text-grape-deep"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open size-5" aria-hidden="true"> <path d="M12 7v14"></path> <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"> </path> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">累计刷题</div>
+                            <div class="v3-stat-val tabular-nums">0<em>题</em></div>
                         </div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">累计刷题</div>
+                    </div>
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-mint-soft text-mint"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-target size-5" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <circle cx="12" cy="12" r="6"></circle> <circle cx="12" cy="12" r="2"></circle> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">平均正确率</div>
+                            <div class="v3-stat-val tabular-nums">0<em>%</em></div>
+                        </div>
+                    </div>
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-peach-soft text-peach-deep"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-alert size-5" aria-hidden="true"> <circle cx="12" cy="12" r="10"></circle> <line x1="12" x2="12" y1="8" y2="12"></line> <line x1="12" x2="12.01" y1="16" y2="16"></line> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">待复习</div>
+                            <div class="v3-stat-val tabular-nums">0<em>题</em></div>
+                        </div>
+                    </div>
+                    <div class="v3-stat">
+                        <div class="v3-stat-ic bg-mango-soft text-mango"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text size-5" aria-hidden="true"> <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"> </path> <path d="M14 2v5a1 1 0 0 0 1 1h5"></path> <path d="M10 9H8"></path> <path d="M16 13H8"></path> <path d="M16 17H8"></path> </svg></div>
+                        <div>
+                            <div class="v3-stat-label">资料库</div>
+                            <div class="v3-stat-val tabular-nums">0<em>份</em></div>
+                        </div>
                     </div>
                 </div>
-                <div class="flex h-full flex-row items-center gap-3 rounded-2xl p-4 transition-all"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft); opacity: 1; transform: none;">
-                    <div class="flex items-center justify-between">
-                        <div class="flex size-10 items-center justify-center rounded-xl"
-                            style="background-color: var(--mint-soft, #e8f7ef);"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-target size-5" aria-hidden="true"
-                                style="color: var(--mint-deep, #2d8a5f);">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="12" r="6"></circle>
-                                <circle cx="12" cy="12" r="2"></circle>
-                            </svg></div>
-                    </div>
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="text-[24px] font-extrabold leading-none tabular-nums" style="color: var(--ink);">0%
-                        </div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">平均正确率</div>
-                    </div>
-                </div>
-                <div class="flex h-full flex-row items-center gap-3 rounded-2xl p-4 transition-all"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft); opacity: 1; transform: none;">
-                    <div class="flex items-center justify-between">
-                        <div class="flex size-10 items-center justify-center rounded-xl"
-                            style="background-color: var(--peach-soft);"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-circle-alert size-5" aria-hidden="true"
-                                style="color: var(--peach-deep);">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="12" x2="12" y1="8" y2="12"></line>
-                                <line x1="12" x2="12.01" y1="16" y2="16"></line>
-                            </svg></div>
-                    </div>
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="text-[24px] font-extrabold leading-none tabular-nums" style="color: var(--ink);">0题
-                        </div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">待复习</div>
-                    </div>
-                </div>
-                <div class="flex h-full flex-row items-center gap-3 rounded-2xl p-4 transition-all"
-                    style="background-color: var(--card); border: 2px solid var(--line); box-shadow: var(--shadow-soft); opacity: 1; transform: none;">
-                    <div class="flex items-center justify-between">
-                        <div class="flex size-10 items-center justify-center rounded-xl"
-                            style="background-color: var(--sky-soft, #e0f2fe);"><svg xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-file-text size-5" aria-hidden="true"
-                                style="color: var(--sky-deep, #0369a1);">
-                                <path
-                                    d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
-                                </path>
-                                <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
-                                <path d="M10 9H8"></path>
-                                <path d="M16 13H8"></path>
-                                <path d="M16 17H8"></path>
-                            </svg></div>
-                    </div>
-                    <div class="flex min-w-0 flex-1 flex-col">
-                        <div class="text-[24px] font-extrabold leading-none tabular-nums" style="color: var(--ink);">0份
-                        </div>
-                        <div class="mt-1 text-[12px] font-bold" style="color: var(--ink-soft);">资料库</div>
-                    </div>
-                </div>
-            </div>
             <div class="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-2 lg:items-stretch">
                 <div class="flex h-full flex-col" style="opacity: 1; transform: none;">
                     <div class="flex h-full flex-col rounded-2xl p-4"
