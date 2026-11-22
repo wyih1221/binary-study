@@ -1,7 +1,7 @@
 <html lang="zh-CN">
 
 <head>
-    <script>(function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();</script>
+    <script>(function(){try{var m=localStorage.getItem("wenguo-theme-mode"),d;if(m==="dark")d=true;else if(m==="light")d=false;else if(m==="system")d=window.matchMedia("(prefers-color-scheme: dark)").matches;else d=localStorage.getItem("wenguo-theme")==="dark";if(d)document.documentElement.classList.add("dark");}catch(e){}})();</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/site-base.css">
@@ -225,9 +225,7 @@
                         <div class="flex items-center gap-2 px-3 py-2"><span class="text-xl">✨</span><input
                                 placeholder="或写下你自己的所求，如：高数及格 / 考研上岸"
                                 class="w-full bg-transparent text-sm font-medium outline-none" value=""
-                                style="color: var(--ink);"><button type="button"
-                                class="shrink-0 rounded-full px-4 py-1.5 text-xs font-extrabold transition-all text-white v41-btn-grape"
-                               >所求</button>
+                                style="color: var(--ink);">
                         </div>
                     </div>
                 </div>

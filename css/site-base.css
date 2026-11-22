@@ -8897,3 +8897,12 @@ html.dark .bh-lib-item,
 html.dark .bh-mis-item{
   box-shadow:0 2px 8px -4px rgba(0,0,0,.5) !important;
 }
+/* 外观设置：三档主题卡（跟随系统 / 日间 / 夜间） */
+.bh-theme-card{background-color:var(--cream)!important;box-shadow:none!important;border:0!important}
+.bh-theme-card .bh-theme-ico{background-color:var(--paper)!important;color:var(--ink-soft)!important}
+.bh-theme-card .bh-theme-name{color:var(--ink)!important}
+.bh-theme-card .bh-theme-check{display:none}
+.bh-theme-card[aria-pressed="true"]{background-color:var(--grape-soft)!important;box-shadow:3px 3px 0 var(--grape-soft2)!important}
+.bh-theme-card[aria-pressed="true"] .bh-theme-ico{background-color:var(--grape)!important;color:#fff!important}
+.bh-theme-card[aria-pressed="true"] .bh-theme-name{color:var(--grape-deep)!important}
+.bh-theme-card[aria-pressed="true"] .bh-theme-check{display:flex}

@@ -1,7 +1,7 @@
 <html lang="zh-CN">
 
 <head>
-    <script>(function () { try { var t = localStorage.getItem("wenguo-theme"); if (t === "dark") document.documentElement.classList.add("dark"); } catch (e) { } })();</script>
+    <script>(function(){try{var m=localStorage.getItem("wenguo-theme-mode"),d;if(m==="dark")d=true;else if(m==="light")d=false;else if(m==="system")d=window.matchMedia("(prefers-color-scheme: dark)").matches;else d=localStorage.getItem("wenguo-theme")==="dark";if(d)document.documentElement.classList.add("dark");}catch(e){}})();</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/site-base.css">
@@ -339,92 +339,43 @@
                             <rect width="20" height="14" x="2" y="3" rx="2"></rect>
                             <line x1="8" x2="16" y1="21" y2="21"></line>
                             <line x1="12" x2="12" y1="17" y2="21"></line>
-                        </svg>当前：日间</span>
+                        </svg><span id="bhThemeNow">当前：跟随系统</span></span>
                 </div>
                 <p class="mb-4 text-[12px]" style="color: var(--ink-soft);">选择主题模式，跟随系统会根据电脑深浅色自动切换</p>
-                <div class="grid grid-cols-2 gap-3 sm:grid-cols-4"><button type="button" title="根据电脑深浅色自动切换"
-                        aria-pressed="true"
-                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
-                        style="background-color: var(--grape-soft); box-shadow: 3px 3px 0 var(--grape-soft2)">
-                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110 text-white"
-                            style="background-color: var(--grape)"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-monitor size-5" aria-hidden="true">
-                                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                                <line x1="8" x2="16" y1="21" y2="21"></line>
-                                <line x1="12" x2="12" y1="17" y2="21"></line>
-                            </svg></div>
-                        <div>
-                            <div class="text-[13px] font-extrabold" style="color: var(--grape-deep);">跟随系统</div>
-                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">根据电脑深浅色自动切换
-                            </div>
-                        </div><span
-                            class="absolute right-1.5 top-1.5 flex size-4 items-center justify-center rounded-full"
-                            style="background-color: var(--grape);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
-                                stroke-linecap="round" stroke-linejoin="round"
-                                class="lucide lucide-check size-2.5 text-white" aria-hidden="true">
-                                <path d="M20 6 9 17l-5-5"></path>
-                            </svg></span>
-                    </button><button type="button" title="元气紫主色，浅色背景" aria-pressed="false"
-                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
-                        style="background-color: var(--cream)">
-                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110"
-                            style="background-color: var(--paper); color: var(--ink-soft);"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-sun size-5" aria-hidden="true">
-                                <circle cx="12" cy="12" r="4"></circle>
-                                <path d="M12 2v2"></path>
-                                <path d="M12 20v2"></path>
-                                <path d="m4.93 4.93 1.41 1.41"></path>
-                                <path d="m17.66 17.66 1.41 1.41"></path>
-                                <path d="M2 12h2"></path>
-                                <path d="M20 12h2"></path>
-                                <path d="m6.34 17.66-1.41 1.41"></path>
-                                <path d="m19.07 4.93-1.41 1.41"></path>
-                            </svg></div>
-                        <div>
-                            <div class="text-[13px] font-extrabold" style="color: var(--ink);">日间模式</div>
-                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">元气紫主色，浅色背景
-                            </div>
-                        </div>
-                    </button><button type="button" title="琥珀主色，深色护眼" aria-pressed="false"
-                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
-                        style="background-color: var(--cream)">
-                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110"
-                            style="background-color: var(--paper); color: var(--ink-soft);"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-moon size-5" aria-hidden="true">
-                                <path
-                                    d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401">
-                                </path>
-                            </svg></div>
-                        <div>
-                            <div class="text-[13px] font-extrabold" style="color: var(--ink);">夜间模式</div>
-                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">琥珀主色，深色护眼
-                            </div>
-                        </div>
-                    </button><button type="button" title="翡翠绿主色，深夜专注" aria-pressed="false"
-                        class="group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5"
-                        style="background-color: var(--cream)">
-                        <div class="flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110"
-                            style="background-color: var(--paper); color: var(--ink-soft);"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" class="lucide lucide-flame size-5" aria-hidden="true">
-                                <path
-                                    d="M12 3q1 4 4 6.5t3 5.5a1 1 0 0 1-14 0 5 5 0 0 1 1-3 1 1 0 0 0 5 0c0-2-1.5-3-1.5-5q0-2 2.5-4">
-                                </path>
-                            </svg></div>
-                        <div>
-                            <div class="text-[13px] font-extrabold" style="color: var(--ink);">冲刺模式</div>
-                            <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">翡翠绿主色，深夜专注
-                            </div>
-                        </div>
-                    </button></div>
+                <div class="grid grid-cols-1 gap-3 sm:grid-cols-3"><button type="button" data-mode="system" aria-pressed="false" class="bh-theme-card group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5">
+                    <div class="bh-theme-ico flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-monitor size-5" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+                    </div>
+                    <div>
+                        <div class="bh-theme-name text-[13px] font-extrabold">跟随系统</div>
+                        <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">根据电脑深浅色自动切换</div>
+                    </div>
+                    <span class="bh-theme-check absolute right-1.5 top-1.5 size-4 items-center justify-center rounded-full" style="background-color: var(--grape); color:#fff;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="size-2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+                    </span>
+                </button><button type="button" data-mode="light" aria-pressed="false" class="bh-theme-card group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5">
+                    <div class="bh-theme-ico flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun size-5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                    </div>
+                    <div>
+                        <div class="bh-theme-name text-[13px] font-extrabold">日间模式</div>
+                        <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">元気紫主色，浅色背景</div>
+                    </div>
+                    <span class="bh-theme-check absolute right-1.5 top-1.5 size-4 items-center justify-center rounded-full" style="background-color: var(--grape); color:#fff;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="size-2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+                    </span>
+                </button><button type="button" data-mode="dark" aria-pressed="false" class="bh-theme-card group relative flex flex-col items-center gap-2 rounded-xl p-4 text-center transition-transform hover:-translate-y-0.5">
+                    <div class="bh-theme-ico flex size-10 items-center justify-center rounded-xl transition-transform group-hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon size-5" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="bh-theme-name text-[13px] font-extrabold">夜间模式</div>
+                        <div class="mt-0.5 text-[10px] leading-tight" style="color: var(--ink-faint);">琥珀主色，深色护眼</div>
+                    </div>
+                    <span class="bh-theme-check absolute right-1.5 top-1.5 size-4 items-center justify-center rounded-full" style="background-color: var(--grape); color:#fff;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="size-2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+                    </span>
+                </button></div>
             </div>
             <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
                 style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
@@ -454,7 +405,7 @@
             <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
                 style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
                 <button
-                    class="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--peach-soft)]">
+                    class="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--cream)]">
                     <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
                         style="background-color: var(--peach-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -473,7 +424,7 @@
             <div class="mt-6 overflow-hidden rounded-2xl border bg-[var(--paper)] p-6"
                 style="box-shadow: 4px 4px 0 var(--grape-soft); opacity: 1; transform: none">
                 <button
-                    class="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--peach-soft)]">
+                    class="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition-colors hover:bg-[var(--cream)]">
                     <div class="flex size-10 shrink-0 items-center justify-center rounded-xl"
                         style="background-color: var(--peach-soft);"><svg xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -509,6 +460,32 @@
 <script src="../js/core.js"></script>
 <script src="../js/features.js"></script>
     <script src="../js/app.js"></script>
+<script>
+(function(){
+  var MODE_KEY='wenguo-theme-mode', TK='wenguo-theme';
+  var mq=window.matchMedia('(prefers-color-scheme: dark)');
+  function cur(){try{return localStorage.getItem(MODE_KEY)||'system'}catch(e){return 'system'}}
+  function paint(m){
+    var cards=document.querySelectorAll('.bh-theme-card');
+    for(var i=0;i<cards.length;i++){cards[i].setAttribute('aria-pressed', cards[i].getAttribute('data-mode')===m?'true':'false');}
+    var now=document.getElementById('bhThemeNow');
+    if(now) now.textContent='当前：'+(m==='system'?'跟随系统':(m==='dark'?'夜间':'日间'));
+  }
+  function apply(m){
+    var dark = m==='dark' || (m==='system' && mq.matches);
+    document.documentElement.classList.toggle('dark', dark);
+    try{localStorage.setItem(MODE_KEY,m);localStorage.setItem(TK, dark?'dark':'light');}catch(e){}
+    if(typeof syncFavicon==='function'){try{syncFavicon()}catch(e){}}
+    paint(m);
+  }
+  var cards=document.querySelectorAll('.bh-theme-card');
+  for(var i=0;i<cards.length;i++){
+    cards[i].addEventListener('click', function(){ apply(this.getAttribute('data-mode')); });
+  }
+  if(mq.addEventListener){ mq.addEventListener('change', function(){ if(cur()==='system') apply('system'); }); }
+  apply(cur());
+})();
+</script>
 </body>
 
 </html>
