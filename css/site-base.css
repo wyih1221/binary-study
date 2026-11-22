@@ -8879,3 +8879,7 @@ html.dark .bh-side-card:hover{
   background-origin:border-box !important;
   background-clip:border-box !important;
 }
+/* 透明边框的卡片：背景必须铺到边框区，否则会露出一圈页面底色（看起来像灰边） */
+[style*="solid transparent"][style*="background"]{
+  background-clip:border-box !important;
+}
