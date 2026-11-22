@@ -8922,9 +8922,3 @@ html.dark .overflow-y-auto > [style*="var(--card)"],
 html.dark .overflow-y-auto > [style*="var(--paper)"]{
   box-shadow:0 2px 8px -4px rgba(0,0,0,.5) !important;
 }
-/* 统计卡：内容水平居中 */
-.v3-stats .v3-stat{justify-content:center}
-.bh-dash-stats > div,
-.bh-rec-stats > div{align-items:center;text-align:center}
-.bh-dash-stats > div > div:first-child,
-.bh-rec-stats > div > div:first-child{margin-left:auto;margin-right:auto}
