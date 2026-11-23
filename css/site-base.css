@@ -8969,3 +8969,18 @@ button[class*="hover:-translate-y"],
 a[class*="hover:-translate-y"]{
   transform: scale(1.05) !important;
 }
+/* 收起态：底部用户卡只留头像并居中，按钮隐藏（展开后恢复） */
+@media (min-width:768px) {
+  html:not(.rail-open) body>aside.v41-rail a[href="settings.html"]{
+    justify-content:center !important;
+    gap:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+  }
+  html:not(.rail-open) body>aside.v41-rail a[href="settings.html"] + div{
+    display:none !important;
+  }
+  html:not(.rail-open) body>aside.v41-rail a[href="settings.html"] > div:not(:first-child){
+    display:none !important;
+  }
+}
