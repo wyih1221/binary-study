@@ -8960,3 +8960,12 @@ html.dark{--chrome:#212140}
 .v41-sidebar,
 body>aside.v41-rail,
 aside.v41-rail{background-color:var(--chrome) !important}
+/* 按钮悬停：不做位移跳动，改为轻微放大 5% */
+.v41-btn-grape:hover,
+.v41-btn-clay-ghost:hover,
+.v41-btn-primary:hover,
+.v41-btn-ghost:hover,
+button[class*="hover:-translate-y"],
+a[class*="hover:-translate-y"]{
+  transform: scale(1.05) !important;
+}
