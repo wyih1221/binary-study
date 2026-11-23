@@ -8955,7 +8955,8 @@ html.dark .bh-softcard{
 }
 /* 侧边栏 / 顶栏：与页面底色拉开一档，明暗都看得出边界 */
 :root{--chrome:#e9edf9}
-html.dark{--chrome:#1f1f38}
+html.dark{--chrome:#212140}
 .v41-topbar{background:var(--chrome) !important}
+.v41-sidebar,
 body>aside.v41-rail,
 aside.v41-rail{background-color:var(--chrome) !important}
